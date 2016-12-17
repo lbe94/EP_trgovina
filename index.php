@@ -1,3 +1,6 @@
+<?php
+include('index_session.php')
+?>
 <html>
 <head>
     <meta charset="utf-8">
@@ -16,14 +19,12 @@
         <ul class="nav navbar-nav navbar-right">
             <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>Košarica</a></li>
             <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Uporabnik
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $name ?>
                     <span class="glyphicon glyphicon-user"></span></a>
                 <ul class="dropdown-menu col-md-10">
-                    <div class="form-group-sm">
-                        <button type="button" class="btn btn-primary col-xs-12" style="margin-top: 1%">Moji nakupi</button>
-                        <button type="button" class="btn btn-primary col-xs-12" style="margin-top: 1%">Moj profil</button>
-                        <button type="button" onclick="window.location.href='login.php'" class="btn btn-danger col-xs-12" style="margin-top: 1%">Odjava</button>
-                    </div>
+                        <a href="#" class="btn btn-primary btn-lg col-lg-10 col-lg-offset-1" style="margin-top: 1%">Moji nakupi</a>
+                        <a href="#" class="btn btn-primary btn-lg col-lg-10 col-lg-offset-1" style="margin-top: 1%">Moj profil</a>
+                        <a href="logout.php" class="btn btn-danger btn-lg col-md-10 col-lg-offset-1" style="margin-top: 1%">Odjava</a>
                 </ul>
             </li>
         </ul>
