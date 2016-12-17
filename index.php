@@ -31,7 +31,22 @@ include('index_session.php')
     </div>
 </nav>
 <div class="container">
-
+    <?php
+        while($result = mysqli_fetch_array($select_articles, MYSQLI_ASSOC)){?>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="h2"><?php echo $result['Naziv']?></h2>
+                </div>
+                <div class="panel-body">
+                    <p1 class="h5"><?php echo $result['Opis']?></p1>
+                </div>
+                <div class="panel-footer">
+                    <a href="#" class="btn btn-success btn-lg">V košarico</a>
+                </div>
+            </div>
+    <?php
+        }
+    ?>
 </div>
 </body>
 </html>

@@ -4,4 +4,5 @@
     define('DB_PASSWORD', '');
     define('DB_DATABASE', 'e_trgovina');
     $db = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
+    mysqli_set_charset($db,"utf8");
 ?>
