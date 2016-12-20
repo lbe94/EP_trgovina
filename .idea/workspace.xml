@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29d89ea3-b264-43cd-88a7-defc98e70845" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/projekt.iml" afterPath="$PROJECT_DIR$/.idea/projekt.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index_session.php" afterPath="$PROJECT_DIR$/index_session.php" />
     </list>
     <ignored path="projekt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -266,7 +263,7 @@
       <workItem from="1482248114992" duration="307000" />
       <workItem from="1482249005837" duration="61000" />
       <workItem from="1482252050009" duration="5779000" />
-      <workItem from="1482273086229" duration="184000" />
+      <workItem from="1482273086229" duration="306000" />
     </task>
     <task id="LOCAL-00001" summary=" Login / logout">
       <created>1481983204676</created>
@@ -282,15 +279,22 @@
       <option name="project" value="LOCAL" />
       <updated>1481989138050</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="dodajanje pregleda strank in domača stran prodajalca">
+      <created>1482273276800</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1482273276800</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52458000" />
+    <option name="totallyTimeSpent" value="52580000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17849687" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
