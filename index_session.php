@@ -12,6 +12,8 @@
 
         //display articles
         $select_articles = mysqli_query($db, "SELECT * FROM artikli");
+        $select_customers = mysqli_query($db, "SELECT * FROM stranke");
+        $select_narocila = mysqli_query($db, "SELECT * FROM narocila");
     }
     // ce seja ni vzpostavljena, redirect na login
     else {
