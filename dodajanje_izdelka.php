@@ -1,5 +1,6 @@
 <?php
-include('index_session.php')
+include('index_session.php');
+include ('dodaj_stranko_script.php');
 ?>
 <html>
 <head>
@@ -14,7 +15,7 @@ include('index_session.php')
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">E - trgovina</a>
+            <a class="navbar-brand" href="prodajalec.php">E - trgovina</a>
         </div>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="pregled_narocila.php">Naročila</a></li>
@@ -31,30 +32,33 @@ include('index_session.php')
     </div>
 </nav>
 <div class="container">
-    <?php
-    while($result = mysqli_fetch_array($select_articles, MYSQLI_ASSOC)){?>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h2 class="h2" ><?php echo $result['Naziv']?></h2>
-                <a href="#" class="btn btn-success btn-lg" style="float: right; margin-top: -50px;">Uredi</a>
-            </div>
-            <div class="panel-body">
-                <p1 class="h5"><?php echo $result['Opis']?></p1>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="h3" >Dodajanje izdelka</h3>
+        </div>
+        <form name="ime" action="prodajalec.php" method="post">
+            <div class="panel-body" >
+                <label>Vnesite naziv izdelka:
+                    <input type="name" name="name" placeholder="Vnesite naziv" required>
+                </label>
+                <br>
+                <br>
+                <label style="margin-left: 20px;">Vnesite opis izdelka:
+                    <textarea type="name" name="opis" placeholder="Vnesite opis" style="width: 100%; height: 20%;" required></textarea>
+                </label>
+                <br>
+                <br>
+                <label>Zaloga:
+                    <input type="text" name="zaloga" placeholder="Vnesite vrednost zaloge" required>
+                </label>
+                <label style="margin-left: 20px;">Cena:
+                    <input type="text" placeholder="Vnesite ceno" required>
+                </label>
             </div>
             <div class="panel-footer">
-                <p1 class="h3 text-danger pull-right"><?php echo $result['Cena']." "?><span class="glyphicon-euro"></span></p1>
-                <a href="#" class="btn btn-success btn-lg">V košarico</a>
+                <input type="submit" name="dodaj" class="btn btn-success btn-lg" value="Dodaj"/>
             </div>
-        </div>
-        <?php
-    }
-    ?>
-    <div class="panel panel-default">
-        <div class="panel-heading" style="text-align: center">
-            <a href="dodajanje_izdelka.php">
-                <img src="images/add_button.png" alt="button">
-            </a>
-        </div>
+        </form>
     </div>
 </div>
 </body>

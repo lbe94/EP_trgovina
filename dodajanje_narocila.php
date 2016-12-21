@@ -1,5 +1,6 @@
 <?php
-include('index_session.php')
+include('index_session.php');
+include ('dodaj_stranko_script.php');
 ?>
 <html>
 <head>
@@ -17,7 +18,7 @@ include('index_session.php')
             <a class="navbar-brand" href="prodajalec.php">E - trgovina</a>
         </div>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="pregled_narocila.php">Naročila</a></li>
+            <li><a href="#">Naročila</a></li>
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $name ?>
                     <span class="glyphicon glyphicon-user"></span></a>
@@ -31,42 +32,36 @@ include('index_session.php')
     </div>
 </nav>
 <div class="container">
-    <?php
-    while($result = mysqli_fetch_array($select_narocila, MYSQLI_ASSOC)){?>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h2 class="h2" >Naročilo <?php echo $result['idNarocila']?></h2>
-                <a href="#" class="btn btn-success btn-lg" style="float: right; margin-top: -50px;">Uredi</a>
-            </div>
-            <div class="panel-body">
-                <p1 class="h5">Stranka: <?php echo $result['idStranke']?></p1>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="h3" >Dodajanje stranke</h3>
+        </div>
+        <form name="ime" action="pregled_strank.php" method="post">
+            <div class="panel-body" >
+                <label>Vnesite ime:
+                    <input type="name" name="name" placeholder="Vnesite ime" required>
+                </label>
+                <label style="margin-left: 20px;">Vnesite priimek:
+                    <input type="name" name="sname" placeholder="Vnesite priimek" required>
+                </label>
                 <br>
                 <br>
-                <?php
-                    if ($result['Potrjeno'] == 1) {
-                        ?>
-                        <p1 class="h5">Status: Potrjeno</p1><?php
-                    }
-                    else {
-                        ?>
-                        <p1 class="h5">Status: Ni potrjeno</p1><?php
-                    }
-                ?>
+                <label>Vnesite geslo:
+                    <input type="password" name="pass" placeholder="Vnesite geslo" required>
+                </label>
+                <label style="margin-left: 20px;">Ponovite geslo:
+                    <input type="password" placeholder="Vnesite geslo" required>
+                </label>
+                <br>
+                <br>
+                <label>Vnesite elektronsko pošto:
+                    <input type="email" name="mail" placeholder="Vnesite e-naslov" required>
+                </label>
             </div>
             <div class="panel-footer">
-                <p1 class="h3 text-danger pull-right"><?php echo $result['Znesek']." "?><span class="glyphicon-euro"></span></p1>
-                <a href="#" class="btn btn-success btn-lg">Podrobnosti</a>
+                <input type="submit" name="dodaj" class="btn btn-success btn-lg" value="Dodaj"/>
             </div>
-        </div>
-    <?php
-    }
-    ?>
-    <div class="panel panel-default">
-        <div class="panel-heading" style="text-align: center">
-            <a href="dodajanje_narocila.php">
-                <img src="images/add_button.png" alt="button">
-            </a>
-        </div>
+        </form>
     </div>
 </div>
 </body>
