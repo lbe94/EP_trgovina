@@ -17,7 +17,7 @@ include('index_session.php')
             <a class="navbar-brand" href="prodajalec.php">E - trgovina</a>
         </div>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Naročila</a></li>
+            <li><a href="pregled_narocila.php">Naročila</a></li>
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $name ?>
                     <span class="glyphicon glyphicon-user"></span></a>
@@ -50,7 +50,7 @@ include('index_session.php')
     ?>
     <div class="panel panel-default">
         <div class="panel-heading" style="text-align: center">
-            <a href="#">
+            <a href="dodajanje_stranke.php">
                 <img src="images/add_button.png" alt="button">
             </a>
         </div>

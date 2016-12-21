@@ -14,7 +14,7 @@ include('index_session.php')
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">E - trgovina</a>
+            <a class="navbar-brand" href="prodajalec.php">E - trgovina</a>
         </div>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="pregled_narocila.php">Naročila</a></li>
@@ -32,26 +32,26 @@ include('index_session.php')
 </nav>
 <div class="container">
     <?php
-    while($result = mysqli_fetch_array($select_articles, MYSQLI_ASSOC)){?>
+    while($result = mysqli_fetch_array($select_narocila, MYSQLI_ASSOC)){?>
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h2 class="h2" ><?php echo $result['Naziv']?></h2>
+                <h2 class="h2" >Naročilo <?php echo $result['idNarocila']?></h2>
                 <a href="#" class="btn btn-success btn-lg" style="float: right; margin-top: -50px;">Uredi</a>
             </div>
             <div class="panel-body">
-                <p1 class="h5"><?php echo $result['Opis']?></p1>
+                <p1 class="h5">Stranka: <?php echo $result['idStranke']?></p1>
             </div>
             <div class="panel-footer">
-                <p1 class="h3 text-danger pull-right"><?php echo $result['Cena']." "?><span class="glyphicon-euro"></span></p1>
-                <a href="#" class="btn btn-success btn-lg">V košarico</a>
+                <p1 class="h3 text-danger pull-right"><?php echo $result['Znesek']." "?><span class="glyphicon-euro"></span></p1>
+                <a href="#" class="btn btn-success btn-lg">Uredi</a>
             </div>
         </div>
-        <?php
+    <?php
     }
     ?>
     <div class="panel panel-default">
         <div class="panel-heading" style="text-align: center">
-            <a href="#">
+            <a href="dodajanje_stranke.php">
                 <img src="images/add_button.png" alt="button">
             </a>
         </div>
