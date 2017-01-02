@@ -2,19 +2,17 @@
 include('index_session.php');
 include('artikel.php');
 
-if(isset($_GET['action'])&& $_GET['action'] =="add"){
+if (isset($_GET['action']) && $_GET['action'] == "add") {
     $id = intval($_GET['id']);
 
-    if(isset($_SESSION['cart'][$id])){
-        $_SESSION['cart'][$id]['quantity'] ++;
-    }
-
-    else {
+    if (isset($_SESSION['cart'][$id])) {
+        $_SESSION['cart'][$id]['quantity']++;
+    } else {
         $sql_s = "SELECT * FROM artikli WHERE idArtikla = '$id'";
 
         $query_s = mysqli_query($db, $sql_s);
 
-        if(mysqli_num_rows($query_s) != 0){
+        if (mysqli_num_rows($query_s) != 0) {
             $row_s = mysqli_fetch_array($query_s, MYSQLI_ASSOC);
 
             $_SESSION['cart'][$row_s['idArtikla']] = array(
@@ -94,7 +92,16 @@ if(isset($_GET['action'])&& $_GET['action'] =="add"){
                 <h4 class="modal-title">Košarica</h4>
             </div>
             <div class="modal-body">
-                <p>Body</p>
+                <?php
+                if (isset($_SESSION['cart'])) {
+                    ?>
+                    <p>Ohoho poglej, v košarici so artikli</p>
+                <?php
+                } else { ?>
+                    <p>Vaša košarica je prazna</p>
+                <?php
+                }
+                ?>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-primary" data-dismiss="modal">Zapri</button>
