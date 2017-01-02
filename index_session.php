@@ -12,6 +12,7 @@
 
         //display articles
         $select_articles = mysqli_query($db, "SELECT * FROM artikli");
+
     }
     // ce seja ni vzpostavljena, redirect na login
     else {
