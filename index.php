@@ -1,6 +1,6 @@
 <?php
-include('index_session.php');
 include('artikel.php');
+include('index_session.php');
 
 if (isset($_GET['action']) && $_GET['action'] == "add") {
     $id = intval($_GET['id']);
@@ -93,13 +93,48 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
             </div>
             <div class="modal-body">
                 <?php
-                if (isset($_SESSION['cart'])) {
-                    ?>
-                    <p>Ohoho poglej, v košarici so artikli</p>
-                <?php
+                if (isset($_SESSION['cart'])) { ?>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>Artikel</th>
+                            <th>Količina</th>
+                            <th>Cena/kos</th>
+                            <th>Skupaj</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <?php foreach ($_SESSION['cart'] as $sis) {
+                            $totalPrice = 0
+                            ?>
+                            <tr>
+                                <td><?php echo $sis['artikel']->getNaziv(); ?></td>
+                                <td><?php echo $sis['quantity']; ?></td>
+                                <td><?php echo $sis['artikel']->getCena(); ?></td>
+                                <?php $totalOne = ($sis['artikel']->getCena() * $sis['quantity']);
+                                    $totalPrice += $totalOne;
+                                ?>
+                                <td><?php echo $totalOne ?></td>
+                                <td><a href="#" class="btn btn-danger btn-sm">Odstrani</a></td>
+                            </tr>
+                            <?php
+                        }
+                        ?>
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Znesek</td>
+                            <td><?php echo $totalPrice ?></td>
+                        </tr>
+                        </tfoot>
+                    </table>
+                    <a href="#" class="btn btn-success btn-lg">Na blagajno</a>
+                    <?php
                 } else { ?>
                     <p>Vaša košarica je prazna</p>
-                <?php
+                    <?php
                 }
                 ?>
             </div>

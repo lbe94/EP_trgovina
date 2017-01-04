@@ -23,4 +23,12 @@ class artikel
         $this->cena = $cena;
         $this->aktiven = $aktiven;
     }
+
+    function getNaziv(){
+        return $this->naziv;
+    }
+
+    function getCena(){
+        return $this->cena;
+    }
 };
