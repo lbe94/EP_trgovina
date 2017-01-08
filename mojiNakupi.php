@@ -1,27 +1,13 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: Luka
+ * Date: 8. 01. 2017
+ * Time: 22:47
+ */
 include('artikel.php');
 include('index_session.php');
 
-if (isset($_GET['action']) && $_GET['action'] == "add") {
-    $id = intval($_GET['id']);
-
-    if (isset($_SESSION['cart'][$id])) {
-        $_SESSION['cart'][$id]['quantity']++;
-    } else {
-        $sql_s = "SELECT * FROM artikli WHERE idArtikla = '$id'";
-
-        $query_s = mysqli_query($db, $sql_s);
-
-        if (mysqli_num_rows($query_s) != 0) {
-            $row_s = mysqli_fetch_array($query_s, MYSQLI_ASSOC);
-
-            $_SESSION['cart'][$row_s['idArtikla']] = array(
-                "quantity" => 1,
-                "artikel" => new artikel($row_s['idArtikla'], $row_s['Naziv'], $row_s['Opis'], $row_s['Zaloga'], $row_s['Cena'], $row_s['Aktiven'])
-            );
-        }
-    }
-}
 ?>
 
 <html>
@@ -48,7 +34,8 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
                 <ul class="dropdown-menu col-md-10">
                     <a href="mojiNakupi.php" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1" style="margin-top: 1%">Moji
                         nakupi</a>
-                    <a href="profile.php" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1" style="margin-top: 1%">Moj
+                    <a href="profile.php" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1"
+                       style="margin-top: 1%">Moj
                         profil</a>
                     <a href="logout.php" class="btn btn-danger btn-lg col-md-10 col-lg-offset-1" style="margin-top: 1%">Odjava</a>
                 </ul>
@@ -57,31 +44,8 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
     </div>
 </nav>
 <div class="container">
-    <?php
-    $articles = array();
-    while ($result = mysqli_fetch_array($select_articles, MYSQLI_ASSOC)) {
-        $article = new artikel($result['idArtikla'], $result['Naziv'], $result['Opis'], $result['Zaloga'], $result['Cena'], $result['Aktiven']);
-        array_push($articles, $article);
-        ?>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h2 class="h2"><?php echo $result['Naziv'] ?></h2>
-            </div>
-            <div class="panel-body">
-                <p1 class="h5"><?php echo $result['Opis'] ?></p1>
-            </div>
-            <div class="panel-footer">
-                <p1 class="h3 text-danger pull-right"><?php echo $result['Cena'] . " " ?><span
-                        class="glyphicon-euro"></span></p1>
-                <a href="index.php?page=products&action=add&id=<?php echo $result['idArtikla'] ?>"
-                   class="btn btn-success btn-lg">V košarico</a>
-            </div>
-        </div>
-        <?php
-    }
-    ?>
+    <h1 class="h1 text-center">Moji nakupi</h1>
 </div>
-
 <div id="myModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
 
@@ -113,7 +77,7 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
                                 <td><?php echo $sis['quantity']; ?></td>
                                 <td><?php echo $sis['artikel']->getCena(); ?></td>
                                 <?php $totalOne = ($sis['artikel']->getCena() * $sis['quantity']);
-                                    $totalPrice += $totalOne;
+                                $totalPrice += $totalOne;
                                 ?>
                                 <td><?php echo $totalOne ?></td>
                                 <td><a href="#" class="btn btn-danger btn-sm">Odstrani</a></td>
@@ -144,8 +108,3 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
             </div>
         </div>
     </div>
-</div>
-
-
-</body>
-</html>
