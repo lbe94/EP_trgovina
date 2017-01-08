@@ -16,6 +16,10 @@
         //display articles
         $select_articles = mysqli_query($db, "SELECT * FROM artikli");
 
+        $selectTax = mysqli_query($db, "SELECT * FROM ddv WHERE aktiven = '0' LIMIT 1");
+        $taxRow = mysqli_fetch_array($selectTax, MYSQLI_ASSOC);
+        $tax = $taxRow['Vrednost'];
+
     }
     // ce seja ni vzpostavljena, redirect na login
     else {
