@@ -39,7 +39,7 @@ include('index_session.php');
         </ul>
     </div>
 </nav>
-<div class="modal-body">
+<div class="container">
     <h1 class="h1 text-center">Blagajna</h1>
     <?php
     if (isset($_SESSION['cart'])) { ?>
@@ -71,6 +71,7 @@ include('index_session.php');
             }
             ?>
             </tbody>
+            <hr>
             <tfoot>
             <tr>
                 <td></td>
@@ -102,6 +103,8 @@ include('index_session.php');
             </tr>
             </tfoot>
         </table>
+        <hr>
+        <a href="#" class="btn btn-success btn-lg col-md-12 pull-right">Zaključi nakup</a>
         <?php
     } else { ?>
         <p>Vaša košarica je prazna</p>
@@ -110,3 +113,4 @@ include('index_session.php');
     ?>
 </div>
 </body>
+</html>

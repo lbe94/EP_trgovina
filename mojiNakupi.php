@@ -6,6 +6,7 @@
  * Time: 22:47
  */
 include('artikel.php');
+include('narocilo.php');
 include('index_session.php');
 
 ?>
@@ -32,7 +33,8 @@ include('index_session.php');
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $name ?>
                     <span class="glyphicon glyphicon-user"></span></a>
                 <ul class="dropdown-menu col-md-10">
-                    <a href="mojiNakupi.php" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1" style="margin-top: 1%">Moji
+                    <a href="mojiNakupi.php" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1"
+                       style="margin-top: 1%">Moji
                         nakupi</a>
                     <a href="profile.php" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1"
                        style="margin-top: 1%">Moj
@@ -45,6 +47,59 @@ include('index_session.php');
 </nav>
 <div class="container">
     <h1 class="h1 text-center">Moji nakupi</h1>
+    <?php
+    $purchases = array();
+    while ($result = mysqli_fetch_array($select_purchases, MYSQLI_ASSOC)) {
+        $purchase = new narocilo($result['idNarocila'], $result['idStranke'], $result['DatumOddaje'], $result['Potrjeno'], $result['Znesek'], $result['DatumPotrditve']);
+        array_push($purchases, $purchase);
+        $tmpIdNarocila = $result['idNarocila'];
+        $select_purchaseItems = mysqli_query($db, "SELECT * FROM narocila_det WHERE idNarocila = '$tmpIdNarocila'");
+
+        $purchaseItems = array(); ?>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 class="h2"><?php echo $purchase->getDatumOddaje(); ?></h2>
+            </div>
+            <div class="panel-body">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Artikel</th>
+                        <th>Količina</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <?php
+                    $pass = 0;
+                    while($resultDet = mysqli_fetch_array($select_purchaseItems, MYSQLI_ASSOC)){
+                        $idArt = $resultDet['idArtikla'];
+                        $selectBasicArticle = mysqli_query($db, "SELECT * FROM artikli WHERE idArtikla = '$idArt'");
+                        $basicArticleResult = mysqli_fetch_array($selectBasicArticle, MYSQLI_ASSOC);
+                        $pass = $resultDet['Kolicina'];?>
+                        <tr>
+                            <td>
+                                <p1><?php echo $basicArticleResult['Naziv'];?></p1>
+                            </td>
+                            <td>
+                                <p1><?php echo $pass;?></p1>
+                            </td>
+                        </tr>
+                        <?php
+                    } ?>
+                    </tbody>
+                    <tfoot>
+
+                    </tfoot>
+                </table>
+            </div>
+            <div class="panel-footer">
+                <p1 class="h3 text-success "><?php echo"Znesek nakupa: ". $result['Znesek'] . " " ?><span
+                        class="glyphicon-euro"></span></p1>
+            </div>
+        </div>
+        <?php
+    }
+    ?>
 </div>
 <div id="myModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
@@ -91,7 +146,7 @@ include('index_session.php');
                             <td></td>
                             <td></td>
                             <td>Znesek:</td>
-                            <td><?php echo $totalPrice ."EUR" ?></td>
+                            <td><?php echo $totalPrice . "EUR" ?></td>
                         </tr>
                         <tr>
                             <td></td>
@@ -100,7 +155,7 @@ include('index_session.php');
                             <td>
                                 <?php
                                 $taxPercentage = ($tax * 100) - 100;
-                                echo $taxPercentage ."%";
+                                echo $taxPercentage . "%";
                                 ?>
                             </td>
                         </tr>
@@ -111,7 +166,7 @@ include('index_session.php');
                             <td>
                                 <?php
                                 $finalTaxPrice = $totalPrice * $tax;
-                                echo $finalTaxPrice ."EUR";
+                                echo $finalTaxPrice . "EUR";
                                 ?>
                             </td>
                         </tr>
@@ -130,3 +185,5 @@ include('index_session.php');
             </div>
         </div>
     </div>
+</body>
+</html>

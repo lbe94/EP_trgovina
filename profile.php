@@ -68,7 +68,7 @@ if(isset($_POST['changeCustomerAttributes'])) {
             <h1 class="h1 text-center">Moj profil</h1>
             <div>
                 <label for="name">Ime:</label>
-                <input type="text" class="form-control" id="name" name="name" value="<?php echo $name ?>" required="required">
+                <input type="text" class="form-control" id="name" name="name" value="<?php echo $name ?>" required>
             </div>
             <div>
                 <label for="surname">Priimek:</label>
@@ -76,7 +76,7 @@ if(isset($_POST['changeCustomerAttributes'])) {
             </div>
             <div>
                 <label for="usr">Uporabniško ime:</label>
-                <input type="text" class="form-control" id="usr" name="username" value="<?php echo  $email ?>" required>
+                <input type="email" class="form-control" id="usr" name="username" value="<?php echo  $email ?>" required>
             </div>
             <div>
                 <label for="pwd"> Geslo:</label>
