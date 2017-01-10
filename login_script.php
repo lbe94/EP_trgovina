@@ -5,7 +5,8 @@ if(isset($_POST['login'])){
     // vkljucimo config datoteko, kjer so nastavljeni parametri za strežnik in se vzpostavi povezava ($db)
     include("config.php");
 
-    // varnostni parametri, da preprecimo sql injection
+    // varnostni parametri, da preprecimo sql
+    //TODO: html special chars
     $username = strip_tags(($_POST['username']));
     $password = strip_tags(($_POST['password']));
     $username = stripslashes(($_POST['username']));

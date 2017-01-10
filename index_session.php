@@ -17,6 +17,10 @@
         //display articles
         $select_articles = mysqli_query($db, "SELECT * FROM artikli");
 
+        //martin
+        $select_narocila = mysqli_query($db, "SELECT * FROM narocila");
+        $select_customers = mysqli_query($db, "SELECT * FROM stranke");
+
         //get tax value (double)
         $selectTax = mysqli_query($db, "SELECT * FROM ddv WHERE aktiven = '0' LIMIT 1");
         $taxRow = mysqli_fetch_array($selectTax, MYSQLI_ASSOC);
