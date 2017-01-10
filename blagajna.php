@@ -76,13 +76,13 @@ include('index_session.php');
             <tr>
                 <td></td>
                 <td></td>
-                <td>Znesek:</td>
+                <td><b>Znesek:</b></td>
                 <td><?php echo $totalPrice ."EUR" ?></td>
             </tr>
             <tr>
                 <td></td>
                 <td></td>
-                <td>DDV:</td>
+                <td><b>DDV:</b></td>
                 <td>
                     <?php
                     $taxPercentage = ($tax * 100) - 100;
@@ -93,7 +93,7 @@ include('index_session.php');
             <tr>
                 <td></td>
                 <td></td>
-                <td>Znesek z DDV:</td>
+                <td class="text"><b>Znesek z DDV:</b></td>
                 <td>
                     <?php
                         $finalTaxPrice = $totalPrice * $tax;
