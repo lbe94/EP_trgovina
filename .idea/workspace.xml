@@ -2,30 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29d89ea3-b264-43cd-88a7-defc98e70845" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/user.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dodaj_stranko_script.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dodajanje.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dodajanje_izdelka.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dodajanje_izdelka_script.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dodajanje_narocila.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dodajanje_stranke.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/izbrisi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/izbrisi_stranko.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/podrobnosti.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pregled_narocila.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pregled_strank.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/prodajalec.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spremeni.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/urejanje_izdelka.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/urejanje_izdelka_script.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/urejanje_narocila.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/urejanje_stranke.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/urejanje_stranke_script.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index_session.php" afterPath="$PROJECT_DIR$/index_session.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login_script.php" afterPath="$PROJECT_DIR$/login_script.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json.php" afterPath="$PROJECT_DIR$/json.php" />
     </list>
     <ignored path="projekt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,32 +36,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="prodajalec.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/prodajalec.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
-              <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dodajanje.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dodajanje.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-              <folding>
-                <marker date="1484056571540" expanded="true" signature="326:479" ph="INSERT INTO stranke... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="cart.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cart.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="874">
+            <state relative-caret-position="644">
               <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
@@ -126,7 +82,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login_script.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login_script.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login_script.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="874">
@@ -153,8 +109,30 @@
       <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1610">
-              <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+            <state relative-caret-position="506">
+              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="json.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/json.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+              <folding>
+                <marker date="1484517883721" expanded="true" signature="37:58" ph="SELECT * FRO... artikli" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="4873" column="11" selection-start-line="4873" selection-start-column="11" selection-end-line="4873" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -199,6 +177,7 @@
         <option value="$PROJECT_DIR$/blagajna.php" />
         <option value="$PROJECT_DIR$/index_session.php" />
         <option value="$PROJECT_DIR$/login_script.php" />
+        <option value="$PROJECT_DIR$/json.php" />
       </list>
     </option>
   </component>
@@ -256,6 +235,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -288,10 +269,22 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e-trgovina" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e-trgovina" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -382,7 +375,10 @@
       <workItem from="1483946805106" duration="12605000" />
       <workItem from="1483986889307" duration="632000" />
       <workItem from="1483992495562" duration="17000" />
-      <workItem from="1484056509429" duration="2016000" />
+      <workItem from="1484056509429" duration="2283000" />
+      <workItem from="1484340320947" duration="608000" />
+      <workItem from="1484411373697" duration="610000" />
+      <workItem from="1484517842915" duration="1470000" />
     </task>
     <task id="LOCAL-00001" summary=" Login / logout">
       <created>1481983204676</created>
@@ -461,20 +457,28 @@
       <option name="project" value="LOCAL" />
       <updated>1484056529001</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Merge Luka &amp; Martin">
+      <created>1484064475880</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1484064475880</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94687000" />
+    <option name="totallyTimeSpent" value="97642000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-14" y="-14" width="3868" height="2098" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20442708" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -486,7 +490,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -534,21 +537,14 @@
     <MESSAGE value="Dodano računanje davka na blagajni in košarici" />
     <MESSAGE value="Pregled preteklih nakupov" />
     <MESSAGE value="Push before merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="Push before merge" />
+    <MESSAGE value="Merge Luka &amp; Martin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge Luka &amp; Martin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1426">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -793,13 +789,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/login.html" />
-    <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6713">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -874,22 +863,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-          <folding>
-            <marker date="1483962884065" expanded="true" signature="37:58" ph="SELECT * FRO... artikli" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_EP_trgovina.zip/EP_trgovina/index_session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="71" />
-          <folding>
-            <marker date="1484056844827" expanded="true" signature="245:300" ph="SELECT Ime F... stranke" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_EP_trgovina.zip/EP_trgovina/index_session.php" />
     <entry file="file://$PROJECT_DIR$/index_session.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1472">
@@ -953,7 +930,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cart.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
+        <state relative-caret-position="644">
           <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
@@ -968,14 +945,6 @@
           <folding>
             <marker date="1484056571588" expanded="true" signature="72:115" ph="DELETE FROM " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1610">
-          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -996,6 +965,32 @@
           <folding>
             <marker date="1484058713894" expanded="true" signature="621:677" ph="SELECT * FRO... stranke" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <folding>
+            <marker date="1484517883721" expanded="true" signature="37:58" ph="SELECT * FRO... artikli" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="4873" column="11" selection-start-line="4873" selection-start-column="11" selection-end-line="4873" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
