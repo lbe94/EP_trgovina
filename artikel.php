@@ -31,4 +31,8 @@ class artikel
     function getCena(){
         return $this->cena;
     }
+
+    function getIdArtikla(){
+        return $this->idArtikla;
+    }
 };

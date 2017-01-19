@@ -8,6 +8,62 @@
 include('artikel.php');
 include('index_session.php');
 
+/*if(isset($_POST['finishOrder'])) {
+
+    /*$newName = strip_tags(($_POST['name']));
+    $newSurname = strip_tags(($_POST['surname']));
+    $newUsername = strip_tags(($_POST['username']));
+    $newName = stripslashes(($_POST['name']));
+    $newSurname= stripslashes(($_POST['surname']));
+    $newUsername = stripslashes(($_POST['username']));
+    $newName = mysqli_real_escape_string($db, ($_POST['name']));
+    $newSurname = mysqli_real_escape_string($db, ($_POST['surname']));
+    $newUsername = mysqli_real_escape_string($db, ($_POST['username']));
+
+    $sql = "UPDATE stranke SET Ime = '$newName', Priimek = '$newSurname', Eposta='$newUsername' WHERE idStranke= '$user_check'";
+    if ($db->query($sql) === TRUE) {
+        header("Location: profile.php");
+    } else {
+        echo "Error updating record: " . $db->error;
+    }
+
+    $totalPrice = 0;
+
+    foreach ($_SESSION['cart'] as $sis) {
+        $totalPrice = $totalPrice + $sis['artikel'] -> getCena() * $sis['quantity'];
+    }
+
+    $dateNow = date("Y-m-d H:i:s");
+    $sql = mysqli_query($db, "INSERT INTO narocila (idStranke, DatumOddaje, Potrjeno, Znesek) VALUES ('$customerId', '$dateNow', '1', '$totalPrice')");
+    // get the last inserted value
+    $idNarocila = mysqli_insert_id();
+
+    if($sql == TRUE){
+        foreach ($_SESSION['cart'] as $sis){
+            $articleIdTmp = $sis['artikel'] -> getIdArtikla();
+            $quantityTmp = $sis['quantity'];
+            $separateSql = mysqli_query($db, "INSERT INTO narocila_det (idNarocila, idArtikla, Kolicina) VALUES ('$idNarocila', '$articleIdTmp', '$quantityTmp')");
+        }
+        header("Location: index.php");
+    }
+    else {
+        header("Location: profile.php");
+    }
+}
+
+        /*<tr>
+            <td><?php echo $sis['artikel']->getNaziv(); ?></td>
+            <td><?php echo $sis['quantity']; ?></td>
+            <td><?php echo $sis['artikel']->getCena(); ?></td>
+            <?php $totalOne = ($sis['artikel']->getCena() * $sis['quantity']);
+            $totalPrice += $totalOne;
+            ?>
+            <td><?php echo $totalOne ?></td>
+            <td><a href="#" class="btn btn-danger btn-sm">Odstrani</a></td>
+        </tr>
+        <?php
+    }*/
+
 ?>
 <html>
 <head>
@@ -104,7 +160,9 @@ include('index_session.php');
             </tfoot>
         </table>
         <hr>
-        <a href="#" class="btn btn-success btn-lg col-md-12 pull-right">Zaključi nakup</a>
+        <form>
+            <a href="zakljuciNakup.php" class="btn btn-success btn-lg col-md-12 pull-right">Zaključi nakup</a>
+        </form>
         <?php
     } else { ?>
         <p>Vaša košarica je prazna</p>

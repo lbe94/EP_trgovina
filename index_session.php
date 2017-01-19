@@ -12,6 +12,7 @@
         $name = $row['Ime'];
         $surname=$row['Priimek'];
         $email = $row['Eposta'];
+        $customerId = $row['idStranke'];
 
 
         //display articles
@@ -25,9 +26,12 @@
         $selectTax = mysqli_query($db, "SELECT * FROM ddv WHERE aktiven = '0' LIMIT 1");
         $taxRow = mysqli_fetch_array($selectTax, MYSQLI_ASSOC);
         $tax = $taxRow['Vrednost'];
+        $taxId = $taxRow['idDDV'];
 
         //get all customer's purchases
         $select_purchases = mysqli_query($db, "SELECT * FROM narocila WHERE idStranke = '$user_check'");
+
+        $totalPrice = 0;
 
 
     }
