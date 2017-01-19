@@ -27,11 +27,13 @@ include('index_session.php');
             $quantityTmp = $sis['quantity'];
             $separateSql = mysqli_query($db, "INSERT INTO narocila_det (idNarocila, idArtikla, Kolicina) VALUES ('$idNarocilaTmp', '$articleIdTmp', '$quantityTmp')");
         }
-        $_SESSION['cart'] = null;
+        unset($_SESSION['cart']);
+        $_SESSION['message'] = "Vaš nakup je bil uspešno zaključen";
         header("Location: index.php");
     }
     else {
-        header("Location: profile.php");
+        $_SESSION['error']= "Nakup ni bil uspešno zaključen";
+        header("Location: index.php");
     }
 
 ?>

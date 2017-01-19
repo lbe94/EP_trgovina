@@ -28,7 +28,9 @@ include('index_session.php');
         </div>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="#" data-toggle="modal" data-target="#myModal"><span
-                        class="glyphicon glyphicon-shopping-cart"></span>Košarica</a></li>
+                        class="glyphicon glyphicon-shopping-cart"></span>Košarica<?php if (isset($_SESSION['cart'])) {
+                        echo " <span class='label label-success label-as-badge'>" . $numberOfItemsInCart . "</span>";
+                    } ?></a></li>
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $name ?>
                     <span class="glyphicon glyphicon-user"></span></a>
@@ -71,17 +73,17 @@ include('index_session.php');
                     <tbody>
                     <?php
                     $pass = 0;
-                    while($resultDet = mysqli_fetch_array($select_purchaseItems, MYSQLI_ASSOC)){
+                    while ($resultDet = mysqli_fetch_array($select_purchaseItems, MYSQLI_ASSOC)) {
                         $idArt = $resultDet['idArtikla'];
                         $selectBasicArticle = mysqli_query($db, "SELECT * FROM artikli WHERE idArtikla = '$idArt'");
                         $basicArticleResult = mysqli_fetch_array($selectBasicArticle, MYSQLI_ASSOC);
-                        $pass = $resultDet['Kolicina'];?>
+                        $pass = $resultDet['Kolicina']; ?>
                         <tr>
                             <td>
-                                <p1><?php echo $basicArticleResult['Naziv'];?></p1>
+                                <p1><?php echo $basicArticleResult['Naziv']; ?></p1>
                             </td>
                             <td>
-                                <p1><?php echo $pass;?></p1>
+                                <p1><?php echo $pass; ?></p1>
                             </td>
                         </tr>
                         <?php
@@ -93,7 +95,7 @@ include('index_session.php');
                 </table>
             </div>
             <div class="panel-footer">
-                <p1 class="h3 text-success "><?php echo"Znesek nakupa: ". $result['Znesek'] . " " ?><span
+                <p1 class="h3 text-success "><?php echo "Znesek nakupa: " . $result['Znesek'] . " " ?><span
                         class="glyphicon-euro"></span></p1>
             </div>
         </div>

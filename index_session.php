@@ -29,9 +29,14 @@
         $taxId = $taxRow['idDDV'];
 
         //get all customer's purchases
-        $select_purchases = mysqli_query($db, "SELECT * FROM narocila WHERE idStranke = '$user_check'");
+        $select_purchases = mysqli_query($db, "SELECT * FROM narocila WHERE idStranke = '$user_check' ORDER BY DatumOddaje asc");
 
-        $totalPrice = 0;
+        if(isset($_SESSION['cart'])){
+            $numberOfItemsInCart = 0;
+            foreach ($_SESSION['cart'] as $cartItem){
+                $numberOfItemsInCart = $numberOfItemsInCart + $cartItem['quantity'];
+            }
+        }
 
 
     }

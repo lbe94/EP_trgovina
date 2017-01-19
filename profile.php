@@ -8,20 +8,22 @@
 include('artikel.php');
 include('index_session.php');
 
-if(isset($_POST['changeCustomerAttributes'])) {
+if (isset($_POST['changeCustomerAttributes'])) {
 
     $newName = strip_tags(($_POST['name']));
     $newSurname = strip_tags(($_POST['surname']));
     $newUsername = strip_tags(($_POST['username']));
     $newName = stripslashes(($_POST['name']));
-    $newSurname= stripslashes(($_POST['surname']));
+    $newSurname = stripslashes(($_POST['surname']));
     $newUsername = stripslashes(($_POST['username']));
     $newName = mysqli_real_escape_string($db, ($_POST['name']));
     $newSurname = mysqli_real_escape_string($db, ($_POST['surname']));
     $newUsername = mysqli_real_escape_string($db, ($_POST['username']));
 
+
     $sql = "UPDATE stranke SET Ime = '$newName', Priimek = '$newSurname', Eposta='$newUsername' WHERE idStranke= '$user_check'";
     if ($db->query($sql) === TRUE) {
+        $_SESSION['success'] = "Podatki so bili uspešno posodobljeni";
         header("Location: profile.php");
     } else {
         echo "Error updating record: " . $db->error;
@@ -46,12 +48,15 @@ if(isset($_POST['changeCustomerAttributes'])) {
         </div>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="#" data-toggle="modal" data-target="#myModal"><span
-                        class="glyphicon glyphicon-shopping-cart"></span>Košarica</a></li>
+                        class="glyphicon glyphicon-shopping-cart"></span>Košarica<?php if (isset($_SESSION['cart'])) {
+                        echo " <span class='label label-success label-as-badge'>" . $numberOfItemsInCart . "</span>";
+                    } ?></a></li>
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $name ?>
                     <span class="glyphicon glyphicon-user"></span></a>
                 <ul class="dropdown-menu col-md-10">
-                    <a href="mojiNakupi.php" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1" style="margin-top: 1%">Moji
+                    <a href="mojiNakupi.php" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1"
+                       style="margin-top: 1%">Moji
                         nakupi</a>
                     <a href="profile.php" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1"
                        style="margin-top: 1%">Moj
@@ -62,34 +67,44 @@ if(isset($_POST['changeCustomerAttributes'])) {
         </ul>
     </div>
 </nav>
-    <div class="container">
-        <form action="#" class="col-md-6 col-md-offset-3" method="post">
-            <img src="./images/user.png" class="center-block">
-            <h1 class="h1 text-center">Moj profil</h1>
-            <div>
-                <label for="name">Ime:</label>
-                <input type="text" class="form-control" id="name" name="name" value="<?php echo $name ?>" required>
-            </div>
-            <div>
-                <label for="surname">Priimek:</label>
-                <input type="text" class="form-control" id="surname" name="surname" value="<?php echo $surname ?>" required>
-            </div>
-            <div>
-                <label for="usr">Uporabniško ime:</label>
-                <input type="email" class="form-control" id="usr" name="username" value="<?php echo  $email ?>" required>
-            </div>
-            <div>
-                <label for="pwd"> Geslo:</label>
-                <input type="password" class="form-control" id="pwd" name="password">
-            </div>
-            <div>
-                <label for="pwd2"> Ponovi geslo:</label>
-                <input type="password" class="form-control" id="pwd2" name="password2">
-            </div>
-            <br>
-            <input type="submit" name="changeCustomerAttributes" class="btn btn-success btn-lg col-md-12" value="Posodobi vrednosti">
-        </form>
-    </div>
+<?php
+if (isset($_SESSION['success'])) {
+    echo "<div class='alert alert-success'>";
+    echo $_SESSION['success'];
+    echo "</div>";
+
+    unset($_SESSION['success']);
+}
+?>
+<div class="container">
+    <form action="#" class="col-md-6 col-md-offset-3" method="post">
+        <img src="./images/user.png" class="center-block">
+        <h1 class="h1 text-center">Moj profil</h1>
+        <div>
+            <label for="name">Ime:</label>
+            <input type="text" class="form-control" id="name" name="name" value="<?php echo $name ?>" required>
+        </div>
+        <div>
+            <label for="surname">Priimek:</label>
+            <input type="text" class="form-control" id="surname" name="surname" value="<?php echo $surname ?>" required>
+        </div>
+        <div>
+            <label for="usr">Uporabniško ime:</label>
+            <input type="email" class="form-control" id="usr" name="username" value="<?php echo $email ?>" required>
+        </div>
+        <div>
+            <label for="pwd"> Geslo:</label>
+            <input type="password" class="form-control" id="pwd" name="password">
+        </div>
+        <div>
+            <label for="pwd2"> Ponovi geslo:</label>
+            <input type="password" class="form-control" id="pwd2" name="password2">
+        </div>
+        <br>
+        <input type="submit" name="changeCustomerAttributes" class="btn btn-success btn-lg col-md-12"
+               value="Posodobi vrednosti">
+    </form>
+</div>
 <div id="myModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
 
@@ -135,7 +150,7 @@ if(isset($_POST['changeCustomerAttributes'])) {
                             <td></td>
                             <td></td>
                             <td>Znesek:</td>
-                            <td><?php echo $totalPrice ."EUR" ?></td>
+                            <td><?php echo $totalPrice . "EUR" ?></td>
                         </tr>
                         <tr>
                             <td></td>
@@ -144,7 +159,7 @@ if(isset($_POST['changeCustomerAttributes'])) {
                             <td>
                                 <?php
                                 $taxPercentage = ($tax * 100) - 100;
-                                echo $taxPercentage ."%";
+                                echo $taxPercentage . "%";
                                 ?>
                             </td>
                         </tr>
@@ -155,7 +170,7 @@ if(isset($_POST['changeCustomerAttributes'])) {
                             <td>
                                 <?php
                                 $finalTaxPrice = $totalPrice * $tax;
-                                echo $finalTaxPrice ."EUR";
+                                echo $finalTaxPrice . "EUR";
                                 ?>
                             </td>
                         </tr>
