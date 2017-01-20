@@ -55,6 +55,18 @@ if (isset($_SESSION['message'])) {
     echo "</div>";
 
     unset($_SESSION['error']);
+} else if(isset($_SESSION['updateProfileSuccess'])){
+    echo "<div class='alert alert-success'>";
+    echo "<strong>" . $_SESSION['updateProfileSuccess'] . "</strong>";
+    echo "</div>";
+
+    unset($_SESSION['updateProfileSuccess']);
+}else if(isset($_SESSION['updateProfileError'])){
+    echo "<div class='alert alert-danger'>";
+    echo "<strong>" . $_SESSION['updateProfileError'] . "</strong>";
+    echo "</div>";
+
+    unset($_SESSION['updateProfileError']);
 }
 ?>
 <div class="container">

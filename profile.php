@@ -10,34 +10,67 @@ include('index_session.php');
 
 if (isset($_POST['changeCustomerAttributes'])) {
 
+    unset($_SESSION['updateProfileError']);
+    unset($_SESSION['updateProfileSuccess']);
+
     //prevent sql injection
     $newName = strip_tags(($_POST['name']));
     $newSurname = strip_tags(($_POST['surname']));
     $newUsername = strip_tags(($_POST['username']));
+    $newPassword = strip_tags(($_POST['password']));
+    $newPasswordRepeat = strip_tags(($_POST['password2']));
     $newName = stripslashes(($_POST['name']));
     $newSurname = stripslashes(($_POST['surname']));
     $newUsername = stripslashes(($_POST['username']));
+    $newPassword = stripslashes(($_POST['password']));
+    $newPasswordRepeat = stripslashes(($_POST['password2']));
     $newName = mysqli_real_escape_string($db, ($_POST['name']));
     $newSurname = mysqli_real_escape_string($db, ($_POST['surname']));
     $newUsername = mysqli_real_escape_string($db, ($_POST['username']));
+    $newPassword = mysqli_real_escape_string($db, ($_POST['password']));
+    $newPasswordRepeat = mysqli_real_escape_string($db, ($_POST['password2']));
+
 
     // erase html characters
     $newName= htmlspecialchars($newName);
     $newSurname = htmlspecialchars($newSurname);
     $newUsername = htmlspecialchars($newUsername);
+    $newPassword = htmlspecialchars($newPassword);
+    $newPasswordRepeat = htmlspecialchars($newPasswordRepeat);
 
-    $sql = "UPDATE stranke SET Ime = ?, Priimek = ?, Eposta=? WHERE idStranke= ?";
-    $preparedStmt = mysqli_prepare($db, $sql);
+    if(!empty($newPassword)){
+        if($newPassword == $newPasswordRepeat){
+            $sql = "UPDATE stranke SET Ime = ?, Priimek = ?, Eposta=?, Geslo = ? WHERE idStranke= ?";
+            $preparedStmt = mysqli_prepare($db, $sql);
 
-    //bind parameters to prevent sql injection
-    mysqli_stmt_bind_param($preparedStmt, 'sssi', $newName, $newSurname, $newUsername, $user_check);
+            //bind parameters to prevent sql injection
+            mysqli_stmt_bind_param($preparedStmt, 'ssssi', $newName, $newSurname, $newUsername, md5($newPassword), $user_check);
 
-    if (mysqli_stmt_execute($preparedStmt) === TRUE) {
-        $_SESSION['success'] = "Podatki so bili uspešno posodobljeni";
-        header("Location: profile.php");
-    } else {
-        echo "Error updating record: " . $db->error;
+            if (mysqli_stmt_execute($preparedStmt) === TRUE) {
+                $_SESSION['updateProfileSuccess'] = "Podatki (Ime, Priimek, E pošta in Geslo) so bili uspešno posodobljeni";
+            } else {
+                echo "Error updating record: " . $db->error;
+            }
+        }
+        else {
+            $_SESSION['updateProfileError'] = "Podatki niso bili posodobljeni. Prosimo preverite, ali ste pravilno vnesli in ponovili geslo!";
+        }
     }
+    else {
+        $sql = "UPDATE stranke SET Ime = ?, Priimek = ?, Eposta=? WHERE idStranke= ?";
+        $preparedStmt = mysqli_prepare($db, $sql);
+
+        //bind parameters to prevent sql injection
+        mysqli_stmt_bind_param($preparedStmt, 'sssi', $newName, $newSurname, $newUsername, $user_check);
+
+        if (mysqli_stmt_execute($preparedStmt) === TRUE) {
+            $_SESSION['updateProfileSuccess'] = "Podatki (Ime, Priimek in E-pošta) so bili uspešno posodobljeni";
+        } else {
+            echo "Error updating record: " . $db->error;
+        }
+    }
+
+    header("Location: index.php");
 }
 ?>
 
@@ -77,15 +110,6 @@ if (isset($_POST['changeCustomerAttributes'])) {
         </ul>
     </div>
 </nav>
-<?php
-if (isset($_SESSION['success'])) {
-    echo "<div class='alert alert-success'>";
-    echo $_SESSION['success'];
-    echo "</div>";
-
-    unset($_SESSION['success']);
-}
-?>
 <div class="container">
     <form action="#" class="col-md-6 col-md-offset-3" method="post">
         <img src="./images/user.png" class="center-block">

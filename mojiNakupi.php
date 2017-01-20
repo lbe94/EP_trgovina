@@ -69,7 +69,7 @@ include('index_session.php');
             </div>
             <div class="panel-body">
                 <?php if ($purchase->getPotrjeno() == 1) {
-                    echo "<div class='alert alert-warning'>";
+                    echo "<div class='alert alert-info'>";
                     echo "<strong>Naročilo čaka na potrditev</strong> ";
                     echo "</div>";
 
