@@ -137,7 +137,11 @@ include('index_session.php');
                                 $totalPrice += $totalOne;
                                 ?>
                                 <td><?php echo $totalOne ?></td>
-                                <td><a href="#" class="btn btn-danger btn-sm">Odstrani</a></td>
+                                <td>
+                                    <form id="<?php echo $sis['artikel']->getIdArtikla() ?>">
+                                        <input type="submit" class="btn btn-danger btn-lg" name="deleteFromCart" value="Odstrani" />
+                                    </form>
+                                </td>
                             </tr>
                             <?php
                         }
@@ -167,7 +171,7 @@ include('index_session.php');
                             <td>Znesek z DDV:</td>
                             <td>
                                 <?php
-                                $finalTaxPrice = $totalPrice * $tax;
+                                $finalTaxPrice = number_format((float)$totalPrice * $tax, 2, '.', '');
                                 echo $finalTaxPrice . "EUR";
                                 ?>
                             </td>
@@ -177,7 +181,7 @@ include('index_session.php');
                     <a href="blagajna.php" class="btn btn-success btn-lg">Na blagajno</a>
                     <?php
                 } else { ?>
-                    <p>Vaša košarica je prazna</p>
+                    <p class="text-primary text-center">Vaša košarica je prazna</p>
                     <?php
                 }
                 ?>

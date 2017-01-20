@@ -85,9 +85,11 @@ include('index_session.php');
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $name ?>
                     <span class="glyphicon glyphicon-user"></span></a>
                 <ul class="dropdown-menu col-md-10">
-                    <a href="mojiNakupi.php" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1" style="margin-top: 1%">Moji
+                    <a href="mojiNakupi.php" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1"
+                       style="margin-top: 1%">Moji
                         nakupi</a>
-                    <a href="profile.php" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1" style="margin-top: 1%">Moj
+                    <a href="profile.php" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1"
+                       style="margin-top: 1%">Moj
                         profil</a>
                     <a href="logout.php" class="btn btn-danger btn-lg col-md-10 col-lg-offset-1" style="margin-top: 1%">Odjava</a>
                 </ul>
@@ -121,7 +123,11 @@ include('index_session.php');
                     $totalPrice = $totalPrice + $totalOne;
                     ?>
                     <td><?php echo $totalOne ?></td>
-                    <td><a href="#" class="btn btn-danger btn-sm">Odstrani</a></td>
+                    <td>
+                        <form id="<?php echo $sis['artikel']->getIdArtikla() ?>">
+                            <input type="submit" class="btn btn-danger btn-lg" name="deleteFromCart" value="Odstrani"/>
+                        </form>
+                    </td>
                 </tr>
                 <?php
             }
@@ -133,7 +139,7 @@ include('index_session.php');
                 <td></td>
                 <td></td>
                 <td><b>Znesek:</b></td>
-                <td><?php echo $totalPrice ."EUR" ?></td>
+                <td><?php echo $totalPrice . "EUR" ?></td>
             </tr>
             <tr>
                 <td></td>
@@ -142,8 +148,8 @@ include('index_session.php');
                 <td>
                     <?php
                     $taxPercentage = ($tax * 100) - 100;
-                    echo $taxPercentage ."%";
-                ?>
+                    echo $taxPercentage . "%";
+                    ?>
                 </td>
             </tr>
             <tr>
@@ -152,8 +158,8 @@ include('index_session.php');
                 <td class="text"><b>Znesek z DDV:</b></td>
                 <td>
                     <?php
-                        $finalTaxPrice = $totalPrice * $tax;
-                        echo $finalTaxPrice ."EUR";
+                    $finalTaxPrice = number_format((float)$totalPrice * $tax, 2, '.', '');
+                    echo $finalTaxPrice . "EUR";
                     ?>
                 </td>
             </tr>
@@ -165,7 +171,7 @@ include('index_session.php');
         </form>
         <?php
     } else { ?>
-        <p>Vaša košarica je prazna</p>
+        <p class="text-primary text-center">Vaša košarica je prazna</p>
         <?php
     }
     ?>

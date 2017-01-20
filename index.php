@@ -41,8 +41,8 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
         <div class="navbar-header">
             <a class="navbar-brand" href="index.php">E - trgovina</a>
         </div>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="#" data-toggle="modal" data-target="#myModal"><span
+        <ul class="nav navbar-nav navbar-right" id="navbarTop">
+            <li id="cartItem"><a href="#" data-toggle="modal" data-target="#myModal"><span
                         class="glyphicon glyphicon-shopping-cart"></span>Košarica<?php if (isset($_SESSION['cart'])) {
                         echo " <span class='label label-success label-as-badge'>" . $numberOfItemsInCart . "</span>";
                     } ?></a></li>
@@ -96,8 +96,8 @@ if (isset($_SESSION['message'])) {
             <div class="panel-footer">
                 <p1 class="h3 text-danger pull-right"><?php echo $result['Cena'] . " " ?><span
                         class="glyphicon-euro"></span></p1>
-                <form id="<?php echo $result['idArtikla']?>">
-                    <input type="submit" class="btn btn-success btn-lg" name="dodajVKošarico" value="Dodaj v košarico" />
+                <form id="<?php echo $result['idArtikla'] ?>">
+                    <input type="submit" id="addToCart" name="addToCart" class="btn btn-success btn-lg" name="dodajVKošarico" value="Dodaj v košarico"/>
                 </form>
             </div>
         </div>
@@ -140,7 +140,11 @@ if (isset($_SESSION['message'])) {
                                 $totalPrice += $totalOne;
                                 ?>
                                 <td><?php echo $totalOne ?></td>
-                                <td><a href="#" class="btn btn-danger btn-sm">Odstrani</a></td>
+                                <td>
+                                    <form id="<?php echo $sis['artikel']->getIdArtikla()?>">
+                                        <input type="submit" class="btn btn-danger btn-lg" name="deleteFromCart" value="Odstrani" />
+                                    </form>
+                                </td>
                             </tr>
                             <?php
                         }
@@ -170,7 +174,7 @@ if (isset($_SESSION['message'])) {
                             <td>Znesek z DDV:</td>
                             <td>
                                 <?php
-                                $finalTaxPrice = $totalPrice * $tax;
+                                $finalTaxPrice = number_format((float)$totalPrice * $tax, 2, '.', '');
                                 echo $finalTaxPrice . "EUR";
                                 ?>
                             </td>
@@ -180,7 +184,7 @@ if (isset($_SESSION['message'])) {
                     <a href="blagajna.php" class="btn btn-success btn-lg">Na blagajno</a>
                     <?php
                 } else { ?>
-                    <p>Vaša košarica je prazna</p>
+                    <p class="text-primary text-center">Vaša košarica je prazna</p>
                     <?php
                 }
                 ?>
