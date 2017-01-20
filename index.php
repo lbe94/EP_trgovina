@@ -2,28 +2,6 @@
 include('artikel.php');
 include('index_session.php');
 
-if (isset($_GET['action']) && $_GET['action'] == "add") {
-    $id = intval($_GET['id']);
-
-    if (isset($_SESSION['cart'][$id])) {
-        $_SESSION['cart'][$id]['quantity']++;
-    } else {
-        $sql_s = "SELECT * FROM artikli WHERE idArtikla = '$id'";
-
-        $query_s = mysqli_query($db, $sql_s);
-
-        if (mysqli_num_rows($query_s) != 0) {
-            $row_s = mysqli_fetch_array($query_s, MYSQLI_ASSOC);
-
-            $_SESSION['cart'][$row_s['idArtikla']] = array(
-                "quantity" => 1,
-                "artikel" => new artikel($row_s['idArtikla'], $row_s['Naziv'], $row_s['Opis'], $row_s['Zaloga'], $row_s['Cena'], $row_s['Aktiven'])
-            );
-        }
-    }
-
-    header("Location: index.php");
-}
 ?>
 
 <html>
@@ -66,7 +44,7 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
 <?php
 if (isset($_SESSION['message'])) {
     echo "<div class='alert alert-success'>";
-    echo "<strong>Hvala za nakup!</strong> ";
+    echo "<strong>Hvala za nakup!</strong> " . $_SESSION['message'];
     echo "<a href='mojiNakupi.php' class='alert-link pull-right'>Vsi moji nakupi</a>";
     echo "</div>";
 
@@ -142,7 +120,7 @@ if (isset($_SESSION['message'])) {
                                 <td><?php echo $totalOne ?></td>
                                 <td>
                                     <form id="<?php echo $sis['artikel']->getIdArtikla()?>">
-                                        <input type="submit" class="btn btn-danger btn-lg" name="deleteFromCart" value="Odstrani" />
+                                        <input type="submit" class="btn btn-danger btn-sm" name="deleteFromCart" value="Odstrani" />
                                     </form>
                                 </td>
                             </tr>
@@ -181,7 +159,7 @@ if (isset($_SESSION['message'])) {
                         </tr>
                         </tfoot>
                     </table>
-                    <a href="blagajna.php" class="btn btn-success btn-lg">Na blagajno</a>
+                    <a href="blagajna.php" class="btn btn-success btn-lg col-md-12 pull-right">Na blagajno</a>
                     <?php
                 } else { ?>
                     <p class="text-primary text-center">Vaša košarica je prazna</p>
@@ -190,7 +168,7 @@ if (isset($_SESSION['message'])) {
                 ?>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Zapri</button>
+
             </div>
         </div>
     </div>

@@ -7,7 +7,12 @@
     if(isset($_SESSION['idStranka'])){
 
         $user_check = $_SESSION['idStranka'];
-        $ses_sql = mysqli_query($db, "SELECT * FROM stranke WHERE idStranke = '$user_check'");
+        $ses_sql = mysqli_prepare($db, "SELECT * FROM stranke WHERE idStranke = ?");
+        //bind parameters to prevent sql injection
+        mysqli_stmt_bind_param($ses_sql, 'i', $user_check);
+        mysqli_stmt_execute($ses_sql);
+        $ses_sql = $ses_sql->get_result();
+
         $row = mysqli_fetch_array($ses_sql, MYSQLI_ASSOC);
         $name = $row['Ime'];
         $surname=$row['Priimek'];
@@ -29,13 +34,25 @@
         $taxId = $taxRow['idDDV'];
 
         //get all customer's purchases
-        $select_purchases = mysqli_query($db, "SELECT * FROM narocila WHERE idStranke = '$user_check' ORDER BY DatumOddaje asc");
+        $select_purchases= mysqli_prepare($db, "SELECT * FROM narocila WHERE idStranke = ? ORDER BY idNarocila desc");
+        //bind parameters to prevent sql injection
+        mysqli_stmt_bind_param($select_purchases, 'i', $user_check);
+        mysqli_stmt_execute($select_purchases);
+        $select_purchases = $select_purchases->get_result();
 
         if(isset($_SESSION['cart'])){
             $numberOfItemsInCart = 0;
             foreach ($_SESSION['cart'] as $cartItem){
                 $numberOfItemsInCart = $numberOfItemsInCart + $cartItem['quantity'];
             }
+        }
+
+        //switch to https
+        // TODO: NEEDS special attention and certificate installation
+        if ($_SERVER['SERVER_PORT']!=443)
+        {
+            $url = "https://". $_SERVER['SERVER_NAME'] . ":443".$_SERVER['REQUEST_URI'];
+            header("Location: $url");
         }
 
 

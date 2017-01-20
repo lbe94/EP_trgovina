@@ -8,7 +8,6 @@
 include('artikel.php');
 include('narocilo.php');
 include('index_session.php');
-
 ?>
 
 <html>
@@ -55,12 +54,18 @@ include('index_session.php');
         $purchase = new narocilo($result['idNarocila'], $result['idStranke'], $result['DatumOddaje'], $result['Potrjeno'], $result['Znesek'], $result['DatumPotrditve']);
         array_push($purchases, $purchase);
         $tmpIdNarocila = $result['idNarocila'];
-        $select_purchaseItems = mysqli_query($db, "SELECT * FROM narocila_det WHERE idNarocila = '$tmpIdNarocila'");
+        $select_purchaseItems = mysqli_prepare($db, "SELECT * FROM narocila_det WHERE idNarocila = ?");
+
+        //bind parameters to prevent sql code injection
+        mysqli_stmt_bind_param($select_purchaseItems, 'i', $tmpIdNarocila);
+        mysqli_stmt_execute($select_purchaseItems);
+        $select_purchaseItems = $select_purchaseItems->get_result();
 
         $purchaseItems = array(); ?>
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h2 class="h2"><?php echo $purchase->getFormatedDate(); ?></h2>
+                <span class="label label-default"><?php echo "Referenčna številka naročila: " . $result['idNarocila']?></span>
             </div>
             <div class="panel-body">
                 <?php if ($purchase->getPotrjeno() == 1) {
@@ -86,7 +91,13 @@ include('index_session.php');
                     $pass = 0;
                     while ($resultDet = mysqli_fetch_array($select_purchaseItems, MYSQLI_ASSOC)) {
                         $idArt = $resultDet['idArtikla'];
-                        $selectBasicArticle = mysqli_query($db, "SELECT * FROM artikli WHERE idArtikla = '$idArt'");
+                        $selectBasicArticle = mysqli_prepare($db, "SELECT * FROM artikli WHERE idArtikla = ?");
+
+                        //bind parameters to prevent sql code injection
+                        mysqli_stmt_bind_param($selectBasicArticle, 'i', $idArt);
+                        mysqli_stmt_execute($selectBasicArticle);
+                        $selectBasicArticle = $selectBasicArticle->get_result();
+
                         $basicArticleResult = mysqli_fetch_array($selectBasicArticle, MYSQLI_ASSOC);
                         $pass = $resultDet['Kolicina']; ?>
                         <tr>
@@ -150,7 +161,7 @@ include('index_session.php');
                                 <td><?php echo $totalOne ?></td>
                                 <td>
                                     <form id="<?php echo $sis['artikel']->getIdArtikla() ?>">
-                                        <input type="submit" class="btn btn-danger btn-lg" name="deleteFromCart"
+                                        <input type="submit" class="btn btn-danger btn-sm" name="deleteFromCart"
                                                value="Odstrani"/>
                                     </form>
                                 </td>
@@ -190,7 +201,7 @@ include('index_session.php');
                         </tr>
                         </tfoot>
                     </table>
-                    <a href="blagajna.php" class="btn btn-success btn-lg">Na blagajno</a>
+                    <a href="blagajna.php" class="btn btn-success btn-lg col-md-12 pull-right">Na blagajno</a>
                     <?php
                 } else { ?>
                     <p class="text-primary text-center">Vaša košarica je prazna</p>
@@ -199,7 +210,6 @@ include('index_session.php');
                 ?>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Zapri</button>
             </div>
         </div>
     </div>

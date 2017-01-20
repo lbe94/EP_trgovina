@@ -1,5 +1,12 @@
 <?php
     include("login_script.php");
+
+    // switch back to http
+    if ($_SERVER['SERVER_PORT']!=80)
+    {
+        $url = "http://". $_SERVER['SERVER_NAME'] . ":80".$_SERVER['REQUEST_URI'];
+        header("Location: $url");
+    }
 ?>
 <html>
     <head>

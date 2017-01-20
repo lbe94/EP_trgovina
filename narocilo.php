@@ -15,6 +15,7 @@ class narocilo
     public $Znesek;
     public $DatumPotrditve;
 
+    //constructor
     function __construct($idNarocila, $idStranke, $DatumOddaje, $Potrjeno, $Znesek, $DatumPotrditve)
     {
         $this->idNarocila = $idNarocila;
@@ -25,6 +26,7 @@ class narocilo
         $this->DatumPotrditve = $DatumPotrditve;
     }
 
+    //getters
     function getIdNarocila(){
         return $this->idNarocila;
     }
@@ -49,6 +51,32 @@ class narocilo
         return $this->DatumPotrditve;
     }
 
+    //setters
+    function setIdNarocila($idNarocila){
+        $this->idNarocila = $idNarocila;
+    }
+
+    function setIdStranke($idStranke){
+        $this->idStranke = $idStranke;
+    }
+
+    function setDatumOddaje($datumOddaje){
+        $this->DatumOddaje = $datumOddaje;
+    }
+
+    function setPotrjeno($potrjeno){
+        $this->Potrjeno = $potrjeno;
+    }
+
+    function setZnesek($znesek){
+        $this->Znesek = $znesek;
+    }
+
+    function setDatumPotrditve($datumPotrditve){
+        $this->DatumPotrditve = $datumPotrditve;
+    }
+
+    // other methods
     function toString(){
         return $this->idNarocila . ' ' . $this->idStranke . ' ' . $this->DatumOddaje . ' ' . $this->Potrjeno . ' ' . $this->Znesek . ' ' . $this->DatumPotrditve;
     }
@@ -58,6 +86,5 @@ class narocilo
 
         $newformat = date('d.m.Y',$time);
         return $newformat;
-
     }
 };

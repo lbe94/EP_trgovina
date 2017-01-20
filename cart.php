@@ -15,9 +15,15 @@ if(isset($_POST['idArtikla'])){
     if (isset($_SESSION['cart'][$id])) {
         $_SESSION['cart'][$id]['quantity']++;
     } else {
-        $sql_s = "SELECT * FROM artikli WHERE idArtikla = '$id'";
+        $sql_s = "SELECT * FROM artikli WHERE idArtikla = ?";
 
-        $query_s = mysqli_query($db, $sql_s);
+        $query_s = mysqli_prepare($db, $sql_s);
+
+        //bind parameters to prevent sql injection
+        mysqli_stmt_bind_param($query_s, 'i', $id);
+
+        mysqli_stmt_execute($query_s);
+        $query_s = $query_s->get_result();
 
         if (mysqli_num_rows($query_s) != 0) {
             $row_s = mysqli_fetch_array($query_s, MYSQLI_ASSOC);

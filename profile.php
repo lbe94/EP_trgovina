@@ -10,6 +10,7 @@ include('index_session.php');
 
 if (isset($_POST['changeCustomerAttributes'])) {
 
+    //prevent sql injection
     $newName = strip_tags(($_POST['name']));
     $newSurname = strip_tags(($_POST['surname']));
     $newUsername = strip_tags(($_POST['username']));
@@ -20,9 +21,18 @@ if (isset($_POST['changeCustomerAttributes'])) {
     $newSurname = mysqli_real_escape_string($db, ($_POST['surname']));
     $newUsername = mysqli_real_escape_string($db, ($_POST['username']));
 
+    // erase html characters
+    $newName= htmlspecialchars($newName);
+    $newSurname = htmlspecialchars($newSurname);
+    $newUsername = htmlspecialchars($newUsername);
 
-    $sql = "UPDATE stranke SET Ime = '$newName', Priimek = '$newSurname', Eposta='$newUsername' WHERE idStranke= '$user_check'";
-    if ($db->query($sql) === TRUE) {
+    $sql = "UPDATE stranke SET Ime = ?, Priimek = ?, Eposta=? WHERE idStranke= ?";
+    $preparedStmt = mysqli_prepare($db, $sql);
+
+    //bind parameters to prevent sql injection
+    mysqli_stmt_bind_param($preparedStmt, 'sssi', $newName, $newSurname, $newUsername, $user_check);
+
+    if (mysqli_stmt_execute($preparedStmt) === TRUE) {
         $_SESSION['success'] = "Podatki so bili uspešno posodobljeni";
         header("Location: profile.php");
     } else {
@@ -141,7 +151,7 @@ if (isset($_SESSION['success'])) {
                                 <td><?php echo $totalOne ?></td>
                                 <td>
                                     <form id="<?php echo $sis['artikel']->getIdArtikla() ?>">
-                                        <input type="submit" class="btn btn-danger btn-lg" name="deleteFromCart" value="Odstrani" />
+                                        <input type="submit" class="btn btn-danger btn-sm" name="deleteFromCart" value="Odstrani" />
                                     </form>
                                 </td>
                             </tr>
@@ -180,7 +190,7 @@ if (isset($_SESSION['success'])) {
                         </tr>
                         </tfoot>
                     </table>
-                    <a href="blagajna.php" class="btn btn-success btn-lg">Na blagajno</a>
+                    <a href="blagajna.php" class="btn btn-success btn-lg col-md-12 pull-right">Na blagajno</a>
                     <?php
                 } else { ?>
                     <p class="text-primary text-center">Vaša košarica je prazna</p>
@@ -189,7 +199,6 @@ if (isset($_SESSION['success'])) {
                 ?>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Zapri</button>
             </div>
         </div>
     </div>

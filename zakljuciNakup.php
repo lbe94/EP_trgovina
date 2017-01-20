@@ -16,7 +16,13 @@ include('index_session.php');
     }
 
     $dateNow = date("Y-m-d H:i:s");
-    $sql = mysqli_query($db, "INSERT INTO narocila (idStranke, DatumOddaje, Potrjeno, Znesek, idDDV) VALUES ('$customerId', '$dateNow', '1', '$totalPrice', '$taxId')");
+    $sql = mysqli_prepare($db, "INSERT INTO narocila (idStranke, DatumOddaje, Potrjeno, Znesek, idDDV) VALUES (?, ?, '1', ?, ?)");
+
+    //bind params to prevent sql code injection
+    mysqli_stmt_bind_param($sql, 'isdi', $customerId, $dateNow, $totalPrice, $taxId);
+    mysqli_stmt_execute($sql);
+
+
     // get the last inserted value
     $idNarocilaTmp = mysqli_insert_id($db);
 
@@ -25,10 +31,13 @@ include('index_session.php');
         foreach ($_SESSION['cart'] as $sis) {
             $articleIdTmp = $sis['artikel'] -> getIdArtikla();
             $quantityTmp = $sis['quantity'];
-            $separateSql = mysqli_query($db, "INSERT INTO narocila_det (idNarocila, idArtikla, Kolicina) VALUES ('$idNarocilaTmp', '$articleIdTmp', '$quantityTmp')");
+            $separateSql = mysqli_prepare($db, "INSERT INTO narocila_det (idNarocila, idArtikla, Kolicina) VALUES (?, ?, ?)");
+            mysqli_stmt_bind_param($separateSql, 'iii', $idNarocilaTmp, $articleIdTmp, $quantityTmp);
+            mysqli_stmt_execute($separateSql);
+
         }
         unset($_SESSION['cart']);
-        $_SESSION['message'] = "Vaš nakup je bil uspešno zaključen";
+        $_SESSION['message'] = "Referenčna številka vašega nakupa znaša: " . $idNarocilaTmp;
         header("Location: index.php");
     }
     else {

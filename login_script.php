@@ -6,7 +6,6 @@ if(isset($_POST['login'])){
     include("config.php");
 
     // varnostni parametri, da preprecimo sql
-    //TODO: html special chars
     $username = strip_tags(($_POST['username']));
     $password = strip_tags(($_POST['password']));
     $username = stripslashes(($_POST['username']));
@@ -14,8 +13,18 @@ if(isset($_POST['login'])){
     $username = mysqli_real_escape_string($db, ($_POST['username']));
     $password = mysqli_real_escape_string($db, ($_POST['password']));
 
-    $sql = "SELECT * FROM stranke WHERE Eposta = '$username' LIMIT 1";
-    $query = mysqli_query($db, $sql);
+    //brisanje html znakov
+    $username = htmlspecialchars($username);
+    $password = htmlspecialchars($password);
+
+    $sql = "SELECT * FROM stranke WHERE Eposta = ? LIMIT 1";
+    $query = mysqli_prepare($db, $sql);
+
+    //bind parameters to prevent sql injection
+    mysqli_stmt_bind_param($query, 's', $username);
+    mysqli_stmt_execute($query);
+    $query = $query->get_result();
+
     $row = mysqli_fetch_array($query);
     $id = $row['idStranke'];
     $db_password = $row['Geslo'];
