@@ -28,6 +28,7 @@ if(isset($_POST['login'])){
 	$id = $row['idProdajalca'];
 	$db_password = $row['Geslo'];
 	
+	// ce username ni bil najden v tabeli prodajalci, pogleda v tabelo administrator
 	if($db_password == NULL){
 		$sql = "SELECT * FROM administrator WHERE Eposta = '$username' LIMIT 1";
 		$query = mysqli_query($db, $sql);
@@ -35,7 +36,7 @@ if(isset($_POST['login'])){
 		$id = $row['idAdministrator'];
 		$db_password = $row['Geslo'];
 		
-		// ce je vpisano geslo (md5 za enkripcijo) enako kot geslo v db, se prijavimo
+		// ce je vpisano geslo (md5 za enkripcijo) enako kot geslo v db, se prijavimo kot administrator
 		if(md5($password) == $db_password){
 			$_SESSION['idAdministrator'] = $id;
 			header("Location: admin.php");
@@ -43,7 +44,7 @@ if(isset($_POST['login'])){
     }
 	else{
 		
-		// ce je vpisano geslo (md5 za enkripcijo) enako kot geslo v db, se prijavimo
+		// ce je vpisano geslo (md5 za enkripcijo) enako kot geslo v db, se prijavimo kot prodajalec
 		if(md5($password) == $db_password){
 			$_SESSION['idProdajalca'] = $id;
 			header("Location: prodajalec.php");

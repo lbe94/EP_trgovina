@@ -1,5 +1,5 @@
 <?php
-include('index_session.php');
+include('navbar.php');
 include ('dodaj_stranko_script.php');
 
 $id = $_GET['id'];
@@ -16,25 +16,14 @@ $result = mysqli_fetch_array($s, MYSQLI_ASSOC);
         <script src="engine.js"></script>
     </head>
     <body>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="prodajalec.php">E - trgovina</a>
-            </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="pregled_narocila.php">Naročila</a></li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $name ?>
-                        <span class="glyphicon glyphicon-user"></span></a>
-                    <ul class="dropdown-menu col-md-10">
-                        <a href="pregled_strank.php" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1" style="margin-top: 1%">Stranke</a>
-                        <a href="#" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1" style="margin-top: 1%">Moj profil</a>
-                        <a href="logout.php" class="btn btn-danger btn-lg col-md-10 col-lg-offset-1" style="margin-top: 1%">Odjava</a>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </nav>
+	<?php 
+	if(isset($_SESSION['idAdministrator'])){
+		echo $navadmin;
+	}
+	else if(isset($_SESSION['idProdajalca'])){
+		echo $navprodajalec;
+	}
+	?>
     <div class="container">
         <div class="panel panel-default">
             <div class="panel-heading">

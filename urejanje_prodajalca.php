@@ -1,9 +1,9 @@
 <?php
 include('navbar.php');
-include ('dodaj_stranko_script.php');
+include ('dodaj_prodajalca_script.php');
 
 $id = $_GET['id'];
-$s = mysqli_query($db, "SELECT * FROM stranke WHERE idStranke = '$id'");
+$s = mysqli_query($db, "SELECT * FROM prodajalci WHERE idProdajalca = '$id'");
 $result = mysqli_fetch_array($s, MYSQLI_ASSOC);
 ?>
     <html>
@@ -16,21 +16,14 @@ $result = mysqli_fetch_array($s, MYSQLI_ASSOC);
         <script src="engine.js"></script>
     </head>
     <body>
-	<?php 
-	if(isset($_SESSION['idAdministrator'])){
-		echo $navadmin;
-	}
-	else if(isset($_SESSION['idProdajalca'])){
-		echo $navprodajalec;
-	}
-	?>
+	<?php echo $navadmin;?>
     <div class="container">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <a href="izbrisi_stranko.php?id=<?php echo $result['idStranke'] ?>" class="btn btn-danger btn-lg col-md-10 col-lg-offset-1" style="margin-top: 1%; float:right; width: 10%">Izbrisi</a>
-                <h3 class="h3" >Urejanje stranke</h3>
+                <a href="izbrisi_prodajalca.php?id=<?php echo $result['idProdajalca'] ?>" class="btn btn-danger btn-lg col-md-10 col-lg-offset-1" style="margin-top: 1%; float:right; width: 10%">Izbrisi</a>
+                <h3 class="h3" >Urejanje prodajalca</h3>
             </div>
-            <form name="ime" action="urejanje_stranke_script.php?id=<?php echo $result['idStranke'] ?>" method="post">
+            <form name="ime" action="urejanje_prodajalca_script.php?id=<?php echo $result['idProdajalca'] ?>" method="post">
                 <div class="panel-body" >
                     <label>Vnesite ime:
                         <input type="name" name="name" placeholder="Vnesite ime" value="<?php echo $result['Ime'] ?>" required>

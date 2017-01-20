@@ -1,6 +1,6 @@
 <?php
 include('navbar.php');
-include ('dodaj_stranko_script.php');
+include ('dodaj_prodajalca_script.php');
 ?>
 <html>
 <head>
@@ -13,17 +13,14 @@ include ('dodaj_stranko_script.php');
 </head>
 <body>
 	<?php 
-	if(isset($_SESSION['idAdministrator'])){
-		echo $navadmin;
-	}
-	else if(isset($_SESSION['idProdajalca'])){
-		echo $navprodajalec;
-	}
+
+	echo $navadmin;
 	?>
+
     <div class="container">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="h3" >Dodajanje stranke</h3>
+                <h3 class="h3" >Dodajanje prodajalca</h3>
             </div>
             <form name="ime" action="dodajanje.php" method="post">
                 <div class="panel-body" >
@@ -51,7 +48,7 @@ include ('dodaj_stranko_script.php');
                     </label>
                 </div>
                 <div class="panel-footer">
-                    <input type="submit" name="dodaj" class="btn btn-success btn-lg" value="Dodaj"/>
+                    <input type="submit" name="dodaj1" class="btn btn-success btn-lg" value="Dodaj"/>
                 </div>
             </form>
         </div>

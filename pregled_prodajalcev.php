@@ -23,7 +23,7 @@ echo $navadmin;
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="h3" ><?php echo $result['Ime']?> <?php echo $result['Priimek']?></h3>
-                <a href="urejanje_stranke.php?id=<?php echo $result['idStranke']?>" class="btn btn-success btn-lg" style="float: right; margin-top: -50px;">Uredi</a>
+                <a href="urejanje_prodajalca.php?id=<?php echo $result['idProdajalca']?>" class="btn btn-success btn-lg" style="float: right; margin-top: -50px;">Uredi</a>
             </div>
             <div class="panel-body">
                 <p1 class="h5">Elektronska pošta: <?php echo $result['Eposta']?></p1>
@@ -37,7 +37,7 @@ echo $navadmin;
     ?>
     <div class="panel panel-default">
         <div class="panel-heading" style="text-align: center">
-            <a href="dodajanje_stranke.php?err=0">
+            <a href="dodajanje_prodajalcev.php?err=0">
                 <img src="images/add_button.png" alt="button">
             </a>
         </div>
