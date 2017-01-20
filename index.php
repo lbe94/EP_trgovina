@@ -33,7 +33,7 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="engine.js"></script>
+    <script src="js/engine.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-inverse">
@@ -96,8 +96,9 @@ if (isset($_SESSION['message'])) {
             <div class="panel-footer">
                 <p1 class="h3 text-danger pull-right"><?php echo $result['Cena'] . " " ?><span
                         class="glyphicon-euro"></span></p1>
-                <a href="index.php?page=products&action=add&id=<?php echo $result['idArtikla'] ?>"
-                   class="btn btn-success btn-lg">V košarico</a>
+                <form id="<?php echo $result['idArtikla']?>">
+                    <input type="submit" class="btn btn-success btn-lg" name="dodajVKošarico" value="Dodaj v košarico" />
+                </form>
             </div>
         </div>
         <?php
