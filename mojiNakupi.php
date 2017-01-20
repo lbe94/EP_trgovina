@@ -60,9 +60,20 @@ include('index_session.php');
         $purchaseItems = array(); ?>
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h2 class="h2"><?php echo $purchase->getDatumOddaje(); ?></h2>
+                <h2 class="h2"><?php echo $purchase->getFormatedDate(); ?></h2>
             </div>
             <div class="panel-body">
+                <?php if ($purchase->getPotrjeno() == 1) {
+                    echo "<div class='alert alert-warning'>";
+                    echo "<strong>Naročilo čaka na potrditev</strong> ";
+                    echo "</div>";
+
+                } else {
+                    echo "<div class='alert alert-success'>";
+                    echo "<strong>Naročilo je bilo potrjeno</strong> ";
+                    echo "</div>";
+                }
+                ?>
                 <table class="table">
                     <thead>
                     <tr>
@@ -139,7 +150,8 @@ include('index_session.php');
                                 <td><?php echo $totalOne ?></td>
                                 <td>
                                     <form id="<?php echo $sis['artikel']->getIdArtikla() ?>">
-                                        <input type="submit" class="btn btn-danger btn-lg" name="deleteFromCart" value="Odstrani" />
+                                        <input type="submit" class="btn btn-danger btn-lg" name="deleteFromCart"
+                                               value="Odstrani"/>
                                     </form>
                                 </td>
                             </tr>

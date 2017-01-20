@@ -52,4 +52,12 @@ class narocilo
     function toString(){
         return $this->idNarocila . ' ' . $this->idStranke . ' ' . $this->DatumOddaje . ' ' . $this->Potrjeno . ' ' . $this->Znesek . ' ' . $this->DatumPotrditve;
     }
+
+    function getFormatedDate(){
+        $time = strtotime($this->DatumOddaje);
+
+        $newformat = date('d.m.Y',$time);
+        return $newformat;
+
+    }
 };

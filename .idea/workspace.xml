@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29d89ea3-b264-43cd-88a7-defc98e70845" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deleteFromCart.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blagajna.php" afterPath="$PROJECT_DIR$/blagajna.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cart.php" afterPath="$PROJECT_DIR$/cart.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/engine.js" afterPath="$PROJECT_DIR$/js/engine.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mojiNakupi.php" afterPath="$PROJECT_DIR$/mojiNakupi.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile.php" afterPath="$PROJECT_DIR$/profile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/narocilo.php" afterPath="$PROJECT_DIR$/narocilo.php" />
     </list>
     <ignored path="projekt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,8 +28,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="896">
-              <caret line="176" column="32" selection-start-line="176" selection-start-column="32" selection-end-line="176" selection-end-column="102" />
+            <state relative-caret-position="598">
+              <caret line="63" column="6" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
               <folding>
                 <marker date="1484909613632" expanded="true" signature="269:314" ph="SELECT * FRO... artikli" />
                 <marker date="1484909613632" expanded="true" signature="6183:6391" ph="..." />
@@ -80,16 +74,6 @@
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="artikel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/artikel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1610">
-              <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -140,26 +124,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mojiNakupi.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mojiNakupi.php">
+      <file leaf-file-name="narocilo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/narocilo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="712">
-              <caret line="173" column="102" selection-start-line="173" selection-start-column="102" selection-end-line="173" selection-end-column="102" />
-              <folding>
-                <marker date="1484909613578" expanded="true" signature="2370:2432" ph="SELECT * FRO... narocila_det" />
-                <marker date="1484909613578" expanded="true" signature="3227:3275" ph="SELECT * FRO... artikli" />
-              </folding>
+            <state relative-caret-position="1448">
+              <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="profile.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/profile.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1356">
               <caret line="175" column="102" selection-start-line="175" selection-start-column="102" selection-end-line="175" selection-end-column="102" />
               <folding>
                 <marker date="1484909613685" expanded="true" signature="720:834" ph="UPDATE stran... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mojiNakupi.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mojiNakupi.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="828">
+              <caret line="75" column="18" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
+              <folding>
+                <marker date="1484910747355" expanded="true" signature="2370:2432" ph="SELECT * FRO... narocila_det" />
+                <marker date="1484910747355" expanded="true" signature="3689:3737" ph="SELECT * FRO... artikli" />
               </folding>
             </state>
           </provider>
@@ -193,7 +187,6 @@
         <option value="$PROJECT_DIR$/config.php" />
         <option value="$PROJECT_DIR$/article.php" />
         <option value="$PROJECT_DIR$/js/profile.php" />
-        <option value="$PROJECT_DIR$/narocilo.php" />
         <option value="$PROJECT_DIR$/login_script.php" />
         <option value="$PROJECT_DIR$/json.php" />
         <option value="$PROJECT_DIR$/artikel.php" />
@@ -207,8 +200,9 @@
         <option value="$PROJECT_DIR$/deleteFromCart.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/blagajna.php" />
-        <option value="$PROJECT_DIR$/mojiNakupi.php" />
         <option value="$PROJECT_DIR$/profile.php" />
+        <option value="$PROJECT_DIR$/narocilo.php" />
+        <option value="$PROJECT_DIR$/mojiNakupi.php" />
       </list>
     </option>
   </component>
@@ -412,7 +406,7 @@
       <workItem from="1484411373697" duration="610000" />
       <workItem from="1484517842915" duration="1501000" />
       <workItem from="1484644941290" duration="810000" />
-      <workItem from="1484771795948" duration="21779000" />
+      <workItem from="1484771795948" duration="22967000" />
     </task>
     <task id="LOCAL-00001" summary=" Login / logout">
       <created>1481983204676</created>
@@ -526,11 +520,18 @@
       <option name="project" value="LOCAL" />
       <updated>1484896971064</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Posodabljanje košarice in blagajne z ajax klici">
+      <created>1484909743587</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1484909743587</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120262000" />
+    <option name="totallyTimeSpent" value="121450000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-14" y="-14" width="3868" height="2098" extended-state="6" />
@@ -604,7 +605,8 @@
     <MESSAGE value="Zaključi račun" />
     <MESSAGE value="Štetje artiklov v košarici" />
     <MESSAGE value="Popravljena struktura dokumentov, začetek dela na ajax in jquery" />
-    <option name="LAST_COMMIT_MESSAGE" value="Popravljena struktura dokumentov, začetek dela na ajax in jquery" />
+    <MESSAGE value="Posodabljanje košarice in blagajne z ajax klici" />
+    <option name="LAST_COMMIT_MESSAGE" value="Posodabljanje košarice in blagajne z ajax klici" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -868,13 +870,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/narocilo.php" />
-    <entry file="file://$PROJECT_DIR$/narocilo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2392">
-          <caret line="52" column="161" selection-start-line="52" selection-start-column="161" selection-end-line="52" selection-end-column="161" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/json.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
@@ -997,14 +992,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/engine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="763">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deleteFromCart.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1310">
@@ -1022,22 +1009,6 @@
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
             <marker date="1484908572672" expanded="true" signature="326:371" ph="SELECT * FRO... artikli" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="896">
-          <caret line="176" column="32" selection-start-line="176" selection-start-column="32" selection-end-line="176" selection-end-column="102" />
-          <folding>
-            <marker date="1484909613632" expanded="true" signature="269:314" ph="SELECT * FRO... artikli" />
-            <marker date="1484909613632" expanded="true" signature="6183:6391" ph="..." />
-            <marker date="1484909613632" expanded="true" signature="6212:6391" ph="..." />
-            <marker date="1484909613632" expanded="true" signature="6463:6776" ph="..." />
-            <marker date="1484909613632" expanded="true" signature="6614:6776" ph="..." />
-            <marker date="1484909613632" expanded="true" signature="6908:7264" ph="..." />
-            <marker date="1484909613632" expanded="true" signature="7068:7264" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1067,23 +1038,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mojiNakupi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="712">
-          <caret line="173" column="102" selection-start-line="173" selection-start-column="102" selection-end-line="173" selection-end-column="102" />
-          <folding>
-            <marker date="1484909613578" expanded="true" signature="2370:2432" ph="SELECT * FRO... narocila_det" />
-            <marker date="1484909613578" expanded="true" signature="3227:3275" ph="SELECT * FRO... artikli" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/profile.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1356">
           <caret line="175" column="102" selection-start-line="175" selection-start-column="102" selection-end-line="175" selection-end-column="102" />
           <folding>
             <marker date="1484909613685" expanded="true" signature="720:834" ph="UPDATE stran... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/engine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="763">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="63" column="6" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
+          <folding>
+            <marker date="1484909613632" expanded="true" signature="269:314" ph="SELECT * FRO... artikli" />
+            <marker date="1484909613632" expanded="true" signature="6183:6391" ph="..." />
+            <marker date="1484909613632" expanded="true" signature="6212:6391" ph="..." />
+            <marker date="1484909613632" expanded="true" signature="6463:6776" ph="..." />
+            <marker date="1484909613632" expanded="true" signature="6614:6776" ph="..." />
+            <marker date="1484909613632" expanded="true" signature="6908:7264" ph="..." />
+            <marker date="1484909613632" expanded="true" signature="7068:7264" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/narocilo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1448">
+          <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mojiNakupi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="75" column="18" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
+          <folding>
+            <marker date="1484910747355" expanded="true" signature="2370:2432" ph="SELECT * FRO... narocila_det" />
+            <marker date="1484910747355" expanded="true" signature="3689:3737" ph="SELECT * FRO... artikli" />
           </folding>
         </state>
       </provider>
