@@ -7,7 +7,8 @@ $stranka = $result['idStranke'];
 $select_customers = mysqli_query($db, "SELECT * FROM stranke WHERE idStranke = '$stranka'");
 $result1 = mysqli_fetch_array($select_customers, MYSQLI_ASSOC);
 $s2 = mysqli_query($db, "SELECT * FROM Narocila_det WHERE idNarocila = '$id'");
-
+$sql = mysqli_query($db, "SELECT * FROM racuni WHERE idNarocila='$id'");
+$result5 = mysqli_fetch_array($sql, MYSQLI_ASSOC);
 ?>
     <html>
     <head>
@@ -16,13 +17,13 @@ $s2 = mysqli_query($db, "SELECT * FROM Narocila_det WHERE idNarocila = '$id'");
         <link rel="stylesheet" href="css/bootstrap.min.css"/>
         <script src="js/jquery-3.1.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/engine.js"></script>
+        <script src="engine.js"></script>
     </head>
     <body>
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="prodajalec.php">E - trgovina</a>
+                <a class="navbar-brand" href="prodajalec.php"><img src="images/logo.png" style="width: 10%; margin-top: -10px;"></a>
             </div>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="pregled_narocila.php">Naročila</a></li>
@@ -31,13 +32,14 @@ $s2 = mysqli_query($db, "SELECT * FROM Narocila_det WHERE idNarocila = '$id'");
                         <span class="glyphicon glyphicon-user"></span></a>
                     <ul class="dropdown-menu col-md-10">
                         <a href="pregled_strank.php" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1" style="margin-top: 1%">Stranke</a>
-                        <a href="#" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1" style="margin-top: 1%">Moj profil</a>
+                        <a href="profile.php" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1" style="margin-top: 1%">Moj profil</a>
                         <a href="logout.php" class="btn btn-danger btn-lg col-md-10 col-lg-offset-1" style="margin-top: 1%">Odjava</a>
                     </ul>
                 </li>
             </ul>
         </div>
     </nav>
+
     <div class="container">
        <div class="panel panel-default">
                 <div class="panel-heading">
@@ -49,17 +51,18 @@ $s2 = mysqli_query($db, "SELECT * FROM Narocila_det WHERE idNarocila = '$id'");
                     <p1 class="h5">Datum oddaje: <?php echo $result['DatumOddaje'] ?></p1>
                     <br>
                     <?php
-                    if ($result['Potrjeno'] == 1) {
+                    if ($result['Potrjeno'] == 0) {
                         ?>
-                        <p1 class="h5">Status: Potrjeno</p1>
-                        <br>
-                        <p1 class="h5">Datum potrditve: <?php echo $result['DatumPotrditve'] ?></p1>
-                        <?php
+                        <p1 class="h5">Status: Potrjeno</p1><?php
                     }
                     else {
-                        ?>
-                        <p1 class="h5">Status: Ni potrjeno</p1>
-                        <?php
+                        if ($result5['Aktiven'] == 1) { ?>
+                            <p1 class="h5">Status: Stornirano</p1><?php
+                        }
+                        else {
+                            ?>
+                            <p1 class="h5">Status: Ni Potrjeno</p1><?php
+                        }
                     }
                     ?>
                         <br>

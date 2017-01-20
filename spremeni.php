@@ -1,25 +1,27 @@
 <?php
 include('index_session.php');
-$id = $_GET['id'];
+$id = $_POST['id'];
 $s = mysqli_query($db, "SELECT * FROM narocila WHERE idNarocila = '$id'");
 $result = mysqli_fetch_array($s, MYSQLI_ASSOC);
 $bool = 1;
 $value = $result['Potrjeno'];
-
-if ($result['Potrjeno'] == 1) {
-    $bool = 0;
+if ($result['Potrjeno'] == 0) {
     $s2 = mysqli_query($db, "SELECT * FROM Prodajalci WHERE Ime = '$name'");
     $result2 = mysqli_fetch_array($s2, MYSQLI_ASSOC);
-
     $idP = $result2['idProdajalca'];
-    $s3 = mysqli_query($db, "DELETE FROM racuni ".
-        " WHERE idNarocila = '$id' AND idProdajalca = '$idP')");
-    $result3 = mysqli_fetch_array($s3, MYSQLI_ASSOC);
+    if ($_POST['storniraj']) {
+        $s3 = mysqli_query($db, "UPDATE racuni SET Zakljucen = 1 WHERE idNarocila = '$id'");
+        $result3 = mysqli_fetch_array($s3, MYSQLI_ASSOC);
+    }
+    else {
+        $s3 = mysqli_query($db, "UPDATE racuni SET Aktiven = 1 WHERE idNarocila = '$id'");
+        $result3 = mysqli_fetch_array($s3, MYSQLI_ASSOC);
+    }
 }
-else {
+else if ($result['Potrjeno'] == 1) {
     $s2 = mysqli_query($db, "SELECT * FROM Prodajalci WHERE Ime = '$name'");
     $result2 = mysqli_fetch_array($s2, MYSQLI_ASSOC);
-
+    $bool = 0;
     $idP = $result2['idProdajalca'];
     $dat =  date("Y-m-d h:i:sa");
     $s3 = mysqli_query($db, "INSERT INTO racuni ".
@@ -32,6 +34,5 @@ else {
 $s1 = mysqli_query($db, "UPDATE Narocila SET Potrjeno = '$bool' WHERE idNarocila = '$id'");
 $result1 = mysqli_fetch_array($s1, MYSQLI_ASSOC);
 
-
-$newURL = 'pregled_narocila.php';
+$newURL = "pregled_narocila.php?id=$id&&s=$val";
 header('Location: '.$newURL);

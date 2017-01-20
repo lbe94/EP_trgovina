@@ -1,6 +1,6 @@
 <?php
 include('config.php');
-$id = $_GET['id'];
+$id = $_POST['id'];
 $naziv = $_POST['naziv'];
 $opis = $_POST['opis'];
 $zaloga = $_POST['zaloga'];
