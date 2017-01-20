@@ -6,8 +6,7 @@
  * Time: 20:29
  */
 include('artikel.php');
-include('index_session.php');
-
+include('navbar.php');
 if(isset($_POST['changeCustomerAttributes'])) {
 
     $newName = strip_tags(($_POST['name']));
@@ -19,7 +18,7 @@ if(isset($_POST['changeCustomerAttributes'])) {
     $newName = mysqli_real_escape_string($db, ($_POST['name']));
     $newSurname = mysqli_real_escape_string($db, ($_POST['surname']));
     $newUsername = mysqli_real_escape_string($db, ($_POST['username']));
-
+	$
     $sql = "UPDATE stranke SET Ime = '$newName', Priimek = '$newSurname', Eposta='$newUsername' WHERE idStranke= '$user_check'";
     if ($db->query($sql) === TRUE) {
         header("Location: profile.php");
@@ -39,29 +38,17 @@ if(isset($_POST['changeCustomerAttributes'])) {
     <script src="engine.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="index.php">E - trgovina</a>
-        </div>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="#" data-toggle="modal" data-target="#myModal"><span
-                        class="glyphicon glyphicon-shopping-cart"></span>Košarica</a></li>
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $name ?>
-                    <span class="glyphicon glyphicon-user"></span></a>
-                <ul class="dropdown-menu col-md-10">
-                    <a href="mojiNakupi.php" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1" style="margin-top: 1%">Moji
-                        nakupi</a>
-                    <a href="profile.php" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1"
-                       style="margin-top: 1%">Moj
-                        profil</a>
-                    <a href="logout.php" class="btn btn-danger btn-lg col-md-10 col-lg-offset-1" style="margin-top: 1%">Odjava</a>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</nav>
+	<?php 
+	if(isset($_SESSION['idAdministrator'])){
+		echo $navadmin;
+	}
+	else if(isset($_SESSION['idProdajalca'])){
+		echo $navprodajalec;
+	}
+	else{echo $navuser;}
+	
+	?>
+
     <div class="container">
         <form action="#" class="col-md-6 col-md-offset-3" method="post">
             <img src="./images/user.png" class="center-block">

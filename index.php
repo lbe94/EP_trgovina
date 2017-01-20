@@ -41,7 +41,7 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
         </div>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="#" data-toggle="modal" data-target="#myModal"><span
-                        class="glyphicon glyphicon-shopping-cart"></span>Košarica</a></li>
+                            class="glyphicon glyphicon-shopping-cart"></span>Košarica</a></li>
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $name ?>
                     <span class="glyphicon glyphicon-user"></span></a>
@@ -72,7 +72,7 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
             </div>
             <div class="panel-footer">
                 <p1 class="h3 text-danger pull-right"><?php echo $result['Cena'] . " " ?><span
-                        class="glyphicon-euro"></span></p1>
+                            class="glyphicon-euro"></span></p1>
                 <a href="index.php?page=products&action=add&id=<?php echo $result['idArtikla'] ?>"
                    class="btn btn-success btn-lg">V košarico</a>
             </div>
@@ -113,7 +113,7 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
                                 <td><?php echo $sis['quantity']; ?></td>
                                 <td><?php echo $sis['artikel']->getCena(); ?></td>
                                 <?php $totalOne = ($sis['artikel']->getCena() * $sis['quantity']);
-                                    $totalPrice += $totalOne;
+                                $totalPrice += $totalOne;
                                 ?>
                                 <td><?php echo $totalOne ?></td>
                                 <td><a href="#" class="btn btn-danger btn-sm">Odstrani</a></td>

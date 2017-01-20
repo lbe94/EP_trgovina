@@ -27,16 +27,18 @@
                     <form action="login.php" class="col-md-6 col-md-offset-3" method="post">
                         <div>
                             <label for="usr">Uporabniško ime:</label>
-                            <input type="text" class="form-control" id="usr" name="username">
+                            <input type="text" class="form-control" id="usr" name="username" required>
                         </div>
                         <div>
                             <label for="pwd">Geslo:</label>
-                            <input type="password" class="form-control" id="pwd" name="password">
+                            <input type="password" class="form-control" id="pwd" name="password" required>
                         </div>
                         <br>
                         <input type="submit" name="login" class="btn btn-success btn-lg col-md-6" value="Prijava">
-                        <a href="#" class="col-md-offset-2">Nov uporabnik?</a>
+                        <a href="register.php" class="col-md-offset-2">Nov uporabnik?</a>
+                        <a href="index.php" class="col-md-offset-2">Vstopi kot gost</a>
                     </form>
+
                 </div>
             </div>
         </div>

@@ -1,6 +1,8 @@
 <?php
+include('admin_script.php');
 include('navbar.php');
 ?>
+
 <html>
 <head>
     <meta charset="utf-8">
@@ -11,17 +13,13 @@ include('navbar.php');
     <script src="engine.js"></script>
 </head>
 <body>
-
 <?php 
-if(isset($_SESSION['idAdministrator'])){
-	echo $navadmin;
-}
-else{echo $navprodajalec;}
+echo $navadmin;
 
 ?>
 <div class="container">
     <?php
-    while($result = mysqli_fetch_array($select_customers, MYSQLI_ASSOC)){?>
+    while($result = mysqli_fetch_array($select_sellers, MYSQLI_ASSOC)){?>
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="h3" ><?php echo $result['Ime']?> <?php echo $result['Priimek']?></h3>
@@ -47,3 +45,4 @@ else{echo $navprodajalec;}
 </div>
 </body>
 </html>
+
