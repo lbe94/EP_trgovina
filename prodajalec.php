@@ -1,5 +1,5 @@
 <?php
-include('index_session.php');
+
 include('navbar.php');
 ?>
 <html>

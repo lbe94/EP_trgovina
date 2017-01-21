@@ -1,5 +1,4 @@
 <?php
-include('index_session.php');
 include('navbar.php');
 include ('dodaj_stranko_script.php');
 
