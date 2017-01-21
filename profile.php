@@ -7,7 +7,6 @@
  */
 include('artikel.php');
 include('index_session.php');
-include('navbar.php');
 if(isset($_POST['changeCustomerAttributes'])) {
 
     unset($_SESSION['updateProfileError']);

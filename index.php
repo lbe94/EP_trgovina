@@ -86,9 +86,20 @@ if (isset($_SESSION['message'])) {
             <div class="panel-footer">
                 <p1 class="h3 text-danger pull-right"><?php echo $result['Cena'] . " " ?><span
                         class="glyphicon-euro"></span></p1>
-                <form id="<?php echo $result['idArtikla'] ?>">
-                    <input type="submit" id="addToCart" name="addToCart" class="btn btn-success btn-lg" name="dodajVKošarico" value="Dodaj v košarico"/>
-                </form>
+                <?php if ($result['Zaloga'] > 0) { ?>
+                    <form id="<?php echo $result['idArtikla'] ?>">
+                        <input type="submit" id="addToCart" name="addToCart" class="btn btn-success btn-lg" name="dodajVKošarico" value="Dodaj v košarico"/>
+                    </form>
+                <?php }
+                else {
+                    ?>
+                    <form id="<?php echo $result['idArtikla'] ?>">
+                        <input type="submit" id="addToCart" name="addToCart" class="btn btn-success btn-lg" name="dodajVKošarico" value="Dodaj v košarico" disabled/>
+                    </form>
+                    <span class="label label-danger">Artikla trenutno ni na zalogi</span>
+                    <?php
+                }
+                ?>
             </div>
         </div>
         <?php
