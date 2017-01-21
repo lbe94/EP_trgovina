@@ -1,7 +1,8 @@
 <?php
-include('index_session.php');
+include('admin_script.php');
 include('navbar.php');
 ?>
+
 <html>
 <head>
     <meta charset="utf-8">
@@ -12,25 +13,17 @@ include('navbar.php');
     <script src="engine.js"></script>
 </head>
 <body>
-
-
-<?php
-if(isset($_SESSION['idAdministrator'])){
-	echo $navadmin;
-}
-else{echo $navprodajalec;}
+<?php 
+echo $navadmin;
 
 ?>
 <div class="container">
     <?php
-    while($result = mysqli_fetch_array($select_customers, MYSQLI_ASSOC)){?>
+    while($result = mysqli_fetch_array($select_sellers, MYSQLI_ASSOC)){?>
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="h3" ><?php echo $result['Ime']?> <?php echo $result['Priimek']?></h3>
-                <form method="post" action="urejanje_stranke.php">
-                    <input type="hidden" name="id" value="<?php echo $result['idStranke'] ?>">
-                    <button class="btn btn-success btn-lg" style="float: right; margin-top: -50px;">Uredi</button>
-                </form>
+                <a href="urejanje_prodajalca.php?id=<?php echo $result['idProdajalca']?>" class="btn btn-success btn-lg" style="float: right; margin-top: -50px;">Uredi</a>
             </div>
             <div class="panel-body">
                 <p1 class="h5">Elektronska pošta: <?php echo $result['Eposta']?></p1>
@@ -44,7 +37,7 @@ else{echo $navprodajalec;}
     ?>
     <div class="panel panel-default">
         <div class="panel-heading" style="text-align: center">
-            <a href="dodajanje_stranke.php?err=0">
+            <a href="dodajanje_prodajalcev.php?err=0">
                 <img src="images/add_button.png" alt="button">
             </a>
         </div>
@@ -52,3 +45,4 @@ else{echo $navprodajalec;}
 </div>
 </body>
 </html>
+

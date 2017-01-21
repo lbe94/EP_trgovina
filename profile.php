@@ -7,8 +7,8 @@
  */
 include('artikel.php');
 include('index_session.php');
-
-if (isset($_POST['changeCustomerAttributes'])) {
+include('navbar.php');
+if(isset($_POST['changeCustomerAttributes'])) {
 
     unset($_SESSION['updateProfileError']);
     unset($_SESSION['updateProfileSuccess']);
@@ -20,7 +20,7 @@ if (isset($_POST['changeCustomerAttributes'])) {
     $newPassword = strip_tags(($_POST['password']));
     $newPasswordRepeat = strip_tags(($_POST['password2']));
     $newName = stripslashes(($_POST['name']));
-    $newSurname = stripslashes(($_POST['surname']));
+    $newSurname= stripslashes(($_POST['surname']));
     $newUsername = stripslashes(($_POST['username']));
     $newPassword = stripslashes(($_POST['password']));
     $newPasswordRepeat = stripslashes(($_POST['password2']));
