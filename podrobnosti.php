@@ -1,4 +1,7 @@
 <?php
+if(!isset($_SESSION['idProdajalca']) || !isset($_SESSION['idAdministrator'])){
+    header("Location: login-staff.php");
+}
 include('index_session.php');
 $id = $_GET['id'];
 $s = mysqli_query($db, "SELECT * FROM Narocila WHERE idNarocila = '$id'");

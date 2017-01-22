@@ -1,4 +1,7 @@
 <?php
+if(isset($_SESSION['idStranke'])){
+    header("Location: login-staff.php");
+}
     if (isset($_POST['dodaj'])) {
         // vkljucimo config datoteko, kjer so nastavljeni parametri za strežnik in se vzpostavi povezava ($db)
         include("config.php");

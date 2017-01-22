@@ -25,12 +25,19 @@ if (isset($_SESSION['idStranka'])) {
 } else if (isset($_SESSION['idAdministrator'])) {
 
     $user_check = $_SESSION['idAdministrator'];
-    $ses_sql = mysqli_query($db, "SELECT * FROM administrator WHERE idAdministrator = '$user_check'");
+    $ses_sql = mysqli_prepare($db, "SELECT * FROM administrator WHERE idAdministrator = ?");
+    mysqli_stmt_bind_param($ses_sql, 'i', $user_check);
+    mysqli_stmt_execute($ses_sql);
+    $ses_sql = $ses_sql->get_result();
+
     $row = mysqli_fetch_array($ses_sql, MYSQLI_ASSOC);
 } else if (isset($_SESSION['idProdajalca'])) {
 
     $user_check = $_SESSION['idProdajalca'];
-    $ses_sql = mysqli_query($db, "SELECT * FROM prodajalci WHERE idProdajalca = '$user_check'");
+    $ses_sql = mysqli_prepare($db, "SELECT * FROM prodajalci WHERE idProdajalca = ?");
+    mysqli_stmt_bind_param($ses_sql, 'i', $user_check);
+    mysqli_stmt_execute($ses_sql);
+    $ses_sql = $ses_sql->get_result();
     $row = mysqli_fetch_array($ses_sql, MYSQLI_ASSOC);
 } // ce seja ni vzpostavljena, redirect na login
 else {

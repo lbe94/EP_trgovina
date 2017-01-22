@@ -14,7 +14,7 @@ $navprodajalec ='
                     <span class="glyphicon glyphicon-user"></span></a>
                 <ul class="dropdown-menu col-md-10">
                     <a href="pregled_strank.php" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1" style="margin-top: 1%">Stranke</a>
-                    <a href="profile.php" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1" style="margin-top: 1%">Moj profil</a>
+                    <a href="profilProdajalca.php" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1" style="margin-top: 1%">Moj profil</a>
                     <a href="logout.php" class="btn btn-danger btn-lg col-md-10 col-lg-offset-1" style="margin-top: 1%">Odjava</a>
                 </ul>
             </li>
@@ -35,7 +35,7 @@ $navadmin='
                 <ul class="dropdown-menu col-md-10">
                     <a href="pregled_prodajalcev.php" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1" style="margin-top: 1%">Prodajalci</a>
 					<a href="pregled_strank.php" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1" style="margin-top: 1%">Stranke</a>
-                    <a href="profile.php" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1" style="margin-top: 1%">Moj Profil</a>
+                    <a href="profilProdajalca.php" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1" style="margin-top: 1%">Moj Profil</a>
                     <a href="logout.php" class="btn btn-danger btn-lg col-md-10 col-lg-offset-1" style="margin-top: 1%">Odjava</a>
                 </ul>
             </li>

@@ -1,7 +1,9 @@
 <?php
 include('navbar.php');
 include ('dodaj_prodajalca_script.php');
-
+if(!isset($_SESSION['idAdministrator'])){
+    header("Location: login-staff.php");
+}
 $id = $_GET['id'];
 $s = mysqli_query($db, "SELECT * FROM prodajalci WHERE idProdajalca = '$id'");
 $result = mysqli_fetch_array($s, MYSQLI_ASSOC);

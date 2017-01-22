@@ -1,5 +1,4 @@
 <?php
-include('index_session.php');
 include('navbar.php');
 include ('dodaj_stranko_script.php');
 
@@ -44,7 +43,7 @@ $result = mysqli_fetch_array($s, MYSQLI_ASSOC);
                     </label>
                     <br>
                     <br>
-                    <label>Ceslo:
+                    <label>Geslo:
                         <input type="password" name="pass" placeholder="Vnesite geslo" required>
                     </label>
                     <label style="margin-left: 20px;">Eposta:

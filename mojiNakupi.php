@@ -54,12 +54,12 @@ include('index_session.php');
         $purchase = new narocilo($result['idNarocila'], $result['idStranke'], $result['DatumOddaje'], $result['Potrjeno'], $result['Znesek'], $result['DatumPotrditve']);
         array_push($purchases, $purchase);
         $tmpIdNarocila = $result['idNarocila'];
-        $select_purchaseItems = mysqli_prepare($db, "SELECT * FROM narocila_det WHERE idNarocila = ?");
+                $select_purchaseItems = mysqli_prepare($db, "SELECT * FROM narocila_det WHERE idNarocila = ?");
 
-        //bind parameters to prevent sql code injection
-        mysqli_stmt_bind_param($select_purchaseItems, 'i', $tmpIdNarocila);
-        mysqli_stmt_execute($select_purchaseItems);
-        $select_purchaseItems = $select_purchaseItems->get_result();
+                //bind parameters to prevent sql code injection
+                mysqli_stmt_bind_param($select_purchaseItems, 'i', $tmpIdNarocila);
+                mysqli_stmt_execute($select_purchaseItems);
+                $select_purchaseItems = $select_purchaseItems->get_result();
 
         $purchaseItems = array(); ?>
         <div class="panel panel-default">

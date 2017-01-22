@@ -1,5 +1,7 @@
 <?php
-include('index_session.php');
+if(isset($_SESSION['idStranke'])){
+    header("Location: login-staff.php");
+}
 include('navbar.php');
 ?>
 <html>

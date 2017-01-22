@@ -21,17 +21,23 @@ if(isset($_POST['login'])){
     $username = mysqli_real_escape_string($db, ($_POST['username']));
     $password = mysqli_real_escape_string($db, ($_POST['password']));
 
-	
-	$sql = "SELECT * FROM prodajalci WHERE Eposta = '$username' LIMIT 1";
-    $query = mysqli_query($db, $sql);
+
+	$sql = "SELECT * FROM prodajalci WHERE Eposta = ? LIMIT 1";
+    $query = mysqli_prepare($db, $sql);
+    mysqli_stmt_bind_param($query, 's', $username);
+    mysqli_stmt_execute($query);
+    $query = $query->get_result();
 	$row = mysqli_fetch_array($query);
 	$id = $row['idProdajalca'];
 	$db_password = $row['Geslo'];
 	
 	// ce username ni bil najden v tabeli prodajalci, pogleda v tabelo administrator
 	if($db_password == NULL){
-		$sql = "SELECT * FROM administrator WHERE Eposta = '$username' LIMIT 1";
-		$query = mysqli_query($db, $sql);
+		$sql = "SELECT * FROM administrator WHERE Eposta = ? LIMIT 1";
+		$query = mysqli_prepare($db, $sql);
+        mysqli_stmt_bind_param($query, 's', $username);
+        mysqli_stmt_execute($query);
+        $query = $query->get_result();
 		$row = mysqli_fetch_array($query);
 		$id = $row['idAdministrator'];
 		$db_password = $row['Geslo'];

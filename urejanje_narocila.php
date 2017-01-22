@@ -1,5 +1,8 @@
 <?php
 include('index_session.php');
+if(!isset($_SESSION['idProdajalca']) || !isset($_SESSION['idAdministrator'])){
+    header("Location: login-staff.php");
+}
 ?>
 <html>
 <head>

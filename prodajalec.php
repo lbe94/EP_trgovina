@@ -1,5 +1,7 @@
 <?php
-include('index_session.php');
+if(isset($_SESSION['idStranke'])){
+    header("Location: login-staff.php");
+}
 include('navbar.php');
 ?>
 <html>
@@ -16,7 +18,7 @@ include('navbar.php');
 	if(isset($_SESSION['idAdministrator'])){
 		echo $navadmin;
 	}
-	else if(isset($_SESSION['idProdajalca'])){
+	else {
 		echo $navprodajalec;
 	}
 ?>
@@ -34,18 +36,9 @@ include('navbar.php');
             <div class="panel-body">
                 <p1 class="h5"><?php echo $result['Opis']?></p1>
             </div>
-            <div class="panel-footer">
-                <p1 class="h3 text-danger pull-right" style="padding-left: 50px;"><?php echo $result['Cena']." "?><span class="glyphicon-euro"></span></p1>
-                <?php if ($result['Zaloga'] > 0) { ?>
-                    <a href="prodajalec.php?page=products&action=add&id=<?php echo $result['idArtikla'] ?>" class="btn btn-success btn-lg">V košarico</a>
-                <?php }
-                else {
-                    ?>
-                    <a href="prodajalec.php?page=products&action=add&id=<?php echo $result['idArtikla'] ?>" class="btn btn-success btn-lg disabled">V košarico</a>
-                    <p1 class="h3 text-danger pull-right" style="color: red;">Ni na voljo</p1>
-                    <?php
-                }
-                ?>
+            <div class="panel-footer" style="height: 35px;">
+                <p1 class="h3 text-danger pull-right" style= "margin-top: -5px; padding-left: 50px;"><?php echo $result['Cena']." "?><span class="glyphicon-euro"></span></p1>
+
             </div>
         </div>
         <?php

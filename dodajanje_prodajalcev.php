@@ -1,6 +1,9 @@
 <?php
 include('navbar.php');
 include ('dodaj_prodajalca_script.php');
+if(!isset($_SESSION['idAdministrator'])){
+    header("Location: login-staff.php");
+}
 ?>
 <html>
 <head>

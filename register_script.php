@@ -39,7 +39,7 @@ if(isset($_POST['register'])){
         if ($query->num_rows == 0) {
             $sql = "INSERT INTO stranke (idStranke, Ime, Priimek, Eposta, Geslo, Aktiven)
                   VALUES (NULL, '$ime', '$priimek', '$email', '$pass1', '0')";
-            $dbWrite = mysqli_query($db, $sql);
+            $dbWrite = mysqli_prepare($db, $sql);
             if ($dbWrite) {  //  if query successful
                 echo "Success!";
             } else {  //  if query failed

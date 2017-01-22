@@ -2,7 +2,68 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29d89ea3-b264-43cd-88a7-defc98e70845" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/projekt.iml" afterPath="$PROJECT_DIR$/.idea/projekt.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin.php" afterPath="$PROJECT_DIR$/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_script.php" afterPath="$PROJECT_DIR$/admin_script.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artikel.php" afterPath="$PROJECT_DIR$/artikel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blagajna.php" afterPath="$PROJECT_DIR$/blagajna.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cart.php" afterPath="$PROJECT_DIR$/cart.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.php" afterPath="$PROJECT_DIR$/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deleteFromCart.php" afterPath="$PROJECT_DIR$/deleteFromCart.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo_artikli.php" afterPath="$PROJECT_DIR$/demo_artikli.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo_stranke.php" afterPath="$PROJECT_DIR$/demo_stranke.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dodaj_prodajalca_script.php" afterPath="$PROJECT_DIR$/dodaj_prodajalca_script.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dodaj_stranko_script.php" afterPath="$PROJECT_DIR$/dodaj_stranko_script.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dodajanje.php" afterPath="$PROJECT_DIR$/dodajanje.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dodajanje_izdelka.php" afterPath="$PROJECT_DIR$/dodajanje_izdelka.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dodajanje_izdelka_script.php" afterPath="$PROJECT_DIR$/dodajanje_izdelka_script.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dodajanje_narocila.php" afterPath="$PROJECT_DIR$/dodajanje_narocila.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dodajanje_prodajalcev.php" afterPath="$PROJECT_DIR$/dodajanje_prodajalcev.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dodajanje_stranke.php" afterPath="$PROJECT_DIR$/dodajanje_stranke.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guest.php" afterPath="$PROJECT_DIR$/guest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guest_script.php" afterPath="$PROJECT_DIR$/guest_script.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index_session.php" afterPath="$PROJECT_DIR$/index_session.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/izbrisi.php" afterPath="$PROJECT_DIR$/izbrisi.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/izbrisi_prodajalca.php" afterPath="$PROJECT_DIR$/izbrisi_prodajalca.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/izbrisi_stranko.php" afterPath="$PROJECT_DIR$/izbrisi_stranko.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/engine.js" afterPath="$PROJECT_DIR$/js/engine.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json.php" afterPath="$PROJECT_DIR$/json.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json_uporabniki.php" afterPath="$PROJECT_DIR$/json_uporabniki.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login-staff.php" afterPath="$PROJECT_DIR$/login-staff.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login_script.php" afterPath="$PROJECT_DIR$/login_script.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logout.php" afterPath="$PROJECT_DIR$/logout.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mojiNakupi.php" afterPath="$PROJECT_DIR$/mojiNakupi.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/narocilo.php" afterPath="$PROJECT_DIR$/narocilo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/navbar.php" afterPath="$PROJECT_DIR$/navbar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/podrobnosti.php" afterPath="$PROJECT_DIR$/podrobnosti.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pregled_narocila.php" afterPath="$PROJECT_DIR$/pregled_narocila.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pregled_prodajalcev.php" afterPath="$PROJECT_DIR$/pregled_prodajalcev.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pregled_strank.php" afterPath="$PROJECT_DIR$/pregled_strank.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prodajalec.php" afterPath="$PROJECT_DIR$/prodajalec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profilProdajalca.php" afterPath="$PROJECT_DIR$/profilProdajalca.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile.php" afterPath="$PROJECT_DIR$/profile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register.php" afterPath="$PROJECT_DIR$/register.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register_script.php" afterPath="$PROJECT_DIR$/register_script.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spremeni.php" afterPath="$PROJECT_DIR$/spremeni.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urejanje_izdelka.php" afterPath="$PROJECT_DIR$/urejanje_izdelka.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urejanje_izdelka_script.php" afterPath="$PROJECT_DIR$/urejanje_izdelka_script.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urejanje_narocila.php" afterPath="$PROJECT_DIR$/urejanje_narocila.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urejanje_prodajalca.php" afterPath="$PROJECT_DIR$/urejanje_prodajalca.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urejanje_prodajalca_script.php" afterPath="$PROJECT_DIR$/urejanje_prodajalca_script.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urejanje_stranke.php" afterPath="$PROJECT_DIR$/urejanje_stranke.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urejanje_stranke_script.php" afterPath="$PROJECT_DIR$/urejanje_stranke_script.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zakljuciNakup.php" afterPath="$PROJECT_DIR$/zakljuciNakup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zavarovano/certs&amp;keys/eptrgovina@localhost-cert.pem.crt" afterPath="$PROJECT_DIR$/zavarovano/certs&amp;keys/eptrgovina@localhost-cert.pem.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zavarovano/certs&amp;keys/eptrgovina@localhost-key.pem.crt" afterPath="$PROJECT_DIR$/zavarovano/certs&amp;keys/eptrgovina@localhost-key.pem.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zavarovano/default-ssl.conf" afterPath="$PROJECT_DIR$/zavarovano/default-ssl.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zavarovano/epca-cacert.pem" afterPath="$PROJECT_DIR$/zavarovano/epca-cacert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zavarovano/epca-crl.pem" afterPath="$PROJECT_DIR$/zavarovano/epca-crl.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zavarovano/index.php" afterPath="$PROJECT_DIR$/zavarovano/index.php" />
     </list>
     <ignored path="projekt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,106 +84,98 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.php">
+      <file leaf-file-name="izbrisi_stranko.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/izbrisi_stranko.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1058">
-              <caret line="93" column="22" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
+            <state relative-caret-position="322">
+              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2116">
-              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/profile.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3174">
-              <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="json.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/json.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
-              <caret line="16" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="demo_artikli.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo_artikli.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3036">
-              <caret line="66" column="14" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
-              <folding>
-                <element signature="e#6#88#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="demo_stranke.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo_stranke.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
-              <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
-              <folding>
-                <element signature="e#6#88#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mojiNakupi.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mojiNakupi.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2162">
-              <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pregled_strank.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pregled_strank.php">
+      <file leaf-file-name="zakljuciNakup.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zakljuciNakup.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1485113762424" expanded="true" signature="369:464" ph="INSERT INTO narocila... " />
+                <marker date="1485113762424" expanded="true" signature="941:1016" ph="INSERT INTO narocila_det... " />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="json_uporabniki.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/json_uporabniki.php">
+      <file leaf-file-name="index_session.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index_session.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="1678">
+              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+              <folding>
+                <marker date="1485116087392" expanded="true" signature="222:263" ph="SELECT * FRO... stranke" />
+                <marker date="1485116087392" expanded="true" signature="690:711" ph="SELECT * FRO... artikli" />
+                <marker date="1485116087392" expanded="true" signature="850:902" ph="SELECT * FRO... administrator" />
+                <marker date="1485116087392" expanded="true" signature="850:903" ph="SELECT * FRO... administrator" />
+                <marker date="1485116087392" expanded="true" signature="1222:1268" ph="SELECT * FRO... prodajalci" />
+                <marker date="1485116087392" expanded="true" signature="1222:1269" ph="SELECT * FRO... prodajalci" />
+                <marker date="1485116087392" expanded="true" signature="1684:1705" ph="SELECT * FRO... artikli" />
+                <marker date="1485116087392" expanded="true" signature="1757:1779" ph="SELECT * FRO... narocila" />
+                <marker date="1485116087392" expanded="true" signature="1822:1843" ph="SELECT * FRO... stranke" />
+                <marker date="1485116087392" expanded="true" signature="1905:1950" ph="SELECT * FRO... ddv" />
+                <marker date="1485116087392" expanded="true" signature="2123:2147" ph="SELECT * FRO... prodajalci" />
+                <marker date="1485116087392" expanded="true" signature="2209:2254" ph="SELECT * FRO... ddv" />
+                <marker date="1485116087392" expanded="true" signature="2415:2482" ph="SELECT * FRO... narocila" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="podrobnosti.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/podrobnosti.php">
+      <file leaf-file-name="admin_script.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin_script.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3312">
-              <caret line="72" column="10" selection-start-line="72" selection-start-column="10" selection-end-line="72" selection-end-column="10" />
-              <folding />
+            <state relative-caret-position="828">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <marker date="1485116786398" expanded="true" signature="708:757" ph="SELECT * FRO... prodajalci" />
+                <marker date="1485116786398" expanded="true" signature="1137:1189" ph="SELECT * FRO... administrator" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dodajanje_izdelka_script.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dodajanje_izdelka_script.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1012">
+              <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+              <folding>
+                <marker date="1485116936602" expanded="true" signature="267:370" ph="INSERT INTO artikli... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spremeni.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spremeni.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1494">
+              <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+              <folding>
+                <marker date="1485115796347" expanded="true" signature="93:135" ph="SELECT * FRO... narocila" />
+                <marker date="1485115796347" expanded="true" signature="93:136" ph="SELECT * FRO... narocila" />
+                <marker date="1485115796347" expanded="true" signature="377:414" ph="SELECT * FRO... Prodajalci" />
+                <marker date="1485115796347" expanded="true" signature="377:415" ph="SELECT * FRO... Prodajalci" />
+                <marker date="1485115796347" expanded="true" signature="680:731" ph="UPDATE racun... " />
+                <marker date="1485115796347" expanded="true" signature="680:732" ph="UPDATE racun... " />
+                <marker date="1485115796347" expanded="true" signature="960:1009" ph="UPDATE racun... " />
+                <marker date="1485115796347" expanded="true" signature="960:1010" ph="UPDATE racun... " />
+                <marker date="1485115796347" expanded="true" signature="1262:1299" ph="SELECT * FRO... Prodajalci" />
+                <marker date="1485115796347" expanded="true" signature="1262:1300" ph="SELECT * FRO... Prodajalci" />
+                <marker date="1485115796347" expanded="true" signature="1579:1719" ph="INSERT INTO racuni... " />
+                <marker date="1485115796347" expanded="true" signature="1923:1981" ph="UPDATE Naroc... " />
+                <marker date="1485115796347" expanded="true" signature="1923:1982" ph="UPDATE Naroc... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -148,9 +201,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/login.html" />
-        <option value="$PROJECT_DIR$/session.php" />
-        <option value="$PROJECT_DIR$/logout.php" />
         <option value="$PROJECT_DIR$/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/config.php" />
         <option value="$PROJECT_DIR$/article.php" />
@@ -163,19 +213,45 @@
         <option value="$PROJECT_DIR$/js/engine.js" />
         <option value="$PROJECT_DIR$/login_script.php" />
         <option value="$PROJECT_DIR$/cart.php" />
-        <option value="$PROJECT_DIR$/index_session.php" />
-        <option value="$PROJECT_DIR$/zakljuciNakup.php" />
         <option value="$PROJECT_DIR$/artikel.php" />
         <option value="$PROJECT_DIR$/narocilo.php" />
         <option value="$PROJECT_DIR$/blagajna.php" />
-        <option value="$PROJECT_DIR$/podrobnosti.php" />
-        <option value="$PROJECT_DIR$/profilProdajalca.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/profile.php" />
-        <option value="$PROJECT_DIR$/mojiNakupi.php" />
         <option value="$PROJECT_DIR$/json_uporabniki.php" />
         <option value="$PROJECT_DIR$/demo_artikli.php" />
         <option value="$PROJECT_DIR$/demo_stranke.php" />
+        <option value="$PROJECT_DIR$/admin.php" />
+        <option value="$PROJECT_DIR$/navbar.php" />
+        <option value="$PROJECT_DIR$/mojiNakupi.php" />
+        <option value="$PROJECT_DIR$/izbrisi.php" />
+        <option value="$PROJECT_DIR$/urejanje_prodajalca_script.php" />
+        <option value="$PROJECT_DIR$/register_script.php" />
+        <option value="$PROJECT_DIR$/prodajalec.php" />
+        <option value="$PROJECT_DIR$/profilProdajalca.php" />
+        <option value="$PROJECT_DIR$/pregled_prodajalcev.php" />
+        <option value="$PROJECT_DIR$/podrobnosti.php" />
+        <option value="$PROJECT_DIR$/izbrisi_prodajalca.php" />
+        <option value="$PROJECT_DIR$/urejanje_izdelka_script.php" />
+        <option value="$PROJECT_DIR$/urejanje_narocila.php" />
+        <option value="$PROJECT_DIR$/urejanje_prodajalca.php" />
+        <option value="$PROJECT_DIR$/dodajanje_prodajalcev.php" />
+        <option value="$PROJECT_DIR$/pregled_narocila.php" />
+        <option value="$PROJECT_DIR$/dodajanje_izdelka.php" />
+        <option value="$PROJECT_DIR$/urejanje_stranke_script.php" />
+        <option value="$PROJECT_DIR$/dodajanje_narocila.php" />
+        <option value="$PROJECT_DIR$/dodajanje_stranke.php" />
+        <option value="$PROJECT_DIR$/dodaj_stranko_script.php" />
+        <option value="$PROJECT_DIR$/dodaj_prodajalca_script.php" />
+        <option value="$PROJECT_DIR$/pregled_strank.php" />
+        <option value="$PROJECT_DIR$/urejanje_izdelka.php" />
+        <option value="$PROJECT_DIR$/urejanje_stranke.php" />
+        <option value="$PROJECT_DIR$/izbrisi_stranko.php" />
+        <option value="$PROJECT_DIR$/zakljuciNakup.php" />
+        <option value="$PROJECT_DIR$/spremeni.php" />
+        <option value="$PROJECT_DIR$/index_session.php" />
+        <option value="$PROJECT_DIR$/admin_script.php" />
+        <option value="$PROJECT_DIR$/dodajanje_izdelka_script.php" />
       </list>
     </option>
   </component>
@@ -234,7 +310,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -253,36 +328,9 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e-trgovina" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e-trgovina" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e-trgovina" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e-trgovina" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -387,6 +435,11 @@
       <workItem from="1485008448161" duration="696000" />
       <workItem from="1485025070049" duration="107000" />
       <workItem from="1485025236195" duration="139000" />
+      <workItem from="1485035519067" duration="806000" />
+      <workItem from="1485075956413" duration="3911000" />
+      <workItem from="1485080459142" duration="1168000" />
+      <workItem from="1485103476752" duration="3493000" />
+      <workItem from="1485113792130" duration="3308000" />
     </task>
     <task id="LOCAL-00001" summary=" Login / logout">
       <created>1481983204676</created>
@@ -539,13 +592,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145191000" />
+    <option name="totallyTimeSpent" value="157877000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-14" y="-14" width="3868" height="2098" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20442708" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20286459" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -584,6 +637,9 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -625,183 +681,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index_session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login_script.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1104">
-          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1840">
-          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="5" column="75" selection-start-line="5" selection-start-column="75" selection-end-line="5" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index_session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login_script.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/jquery-3.1.1.min.js" />
-    <entry file="file://$PROJECT_DIR$/js/engine.js" />
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1104">
-          <caret line="24" column="77" selection-start-line="24" selection-start-column="77" selection-end-line="24" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1115">
-          <caret line="33" column="68" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/jquery-3.1.1.min.js" />
-    <entry file="file://$PROJECT_DIR$/login.html" />
-    <entry file="file://$PROJECT_DIR$/js/narocilo.php" />
-    <entry file="file://$USER_HOME$/Downloads/json.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_EP_trgovina.zip/EP_trgovina/index_session.php" />
-    <entry file="file://$PROJECT_DIR$/prodajalec.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dodajanje.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dodajanje_izdelka.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dodajanje_izdelka_script.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-          <folding>
-            <marker date="1484922932960" expanded="true" signature="187:324" ph="INSERT INTO artikli... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/urejanje_izdelka_script.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/izbrisi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="4863" column="23" selection-start-line="4863" selection-start-column="23" selection-end-line="4863" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/engine.js" />
     <entry file="file://$PROJECT_DIR$/deleteFromCart.php" />
     <entry file="file://$PROJECT_DIR$/config.php">
@@ -838,21 +717,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/narocilo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index_session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blagajna.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5198">
@@ -869,60 +733,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profilProdajalca.php" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_EP_trgovina (1).zip/profile.php" />
-    <entry file="file://$PROJECT_DIR$/podrobnosti.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3312">
-          <caret line="72" column="10" selection-start-line="72" selection-start-column="10" selection-end-line="72" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zakljuciNakup.php" />
-    <entry file="file://$PROJECT_DIR$/mojiNakupi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2162">
-          <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pregled_strank.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/json_uporabniki.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2116">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3174">
-          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+        <state relative-caret-position="823">
+          <caret line="93" column="22" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/json.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
+        <state relative-caret-position="240">
           <caret line="16" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="13" />
           <folding />
         </state>
@@ -930,29 +752,354 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo_artikli.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3036">
+        <state relative-caret-position="823">
           <caret line="66" column="14" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
           <folding>
-            <element signature="e#6#88#0#PHP" expanded="true" />
+            <element signature="e#6#88#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo_stranke.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
+        <state relative-caret-position="240">
           <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
           <folding>
-            <element signature="e#6#88#0#PHP" expanded="true" />
+            <element signature="e#6#88#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/json_uporabniki.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1058">
-          <caret line="93" column="22" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
+        <state relative-caret-position="180">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index_session_prodajalec.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mojiNakupi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="61" column="76" selection-start-line="56" selection-start-column="16" selection-end-line="61" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/izbrisi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login-staff.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/mysqli.php" />
+    <entry file="file://$PROJECT_DIR$/register_script.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urejanje_prodajalca_script.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/narocilo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profilProdajalca.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pregled_prodajalcev.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/podrobnosti.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/izbrisi_prodajalca.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urejanje_izdelka_script.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urejanje_narocila.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urejanje_prodajalca.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dodajanje_izdelka.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urejanje_stranke_script.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dodajanje_narocila.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dodajanje_prodajalcev.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dodajanje_stranke.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dodaj_stranko_script.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dodaj_prodajalca_script.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pregled_narocila.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prodajalec.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="3" column="1" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urejanje_izdelka.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urejanje_stranke.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pregled_strank.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/izbrisi_stranko.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zakljuciNakup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1485113762424" expanded="true" signature="369:464" ph="INSERT INTO narocila... " />
+            <marker date="1485113762424" expanded="true" signature="941:1016" ph="INSERT INTO narocila_det... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spremeni.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1494">
+          <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+          <folding>
+            <marker date="1485115796347" expanded="true" signature="93:135" ph="SELECT * FRO... narocila" />
+            <marker date="1485115796347" expanded="true" signature="93:136" ph="SELECT * FRO... narocila" />
+            <marker date="1485115796347" expanded="true" signature="377:414" ph="SELECT * FRO... Prodajalci" />
+            <marker date="1485115796347" expanded="true" signature="377:415" ph="SELECT * FRO... Prodajalci" />
+            <marker date="1485115796347" expanded="true" signature="680:731" ph="UPDATE racun... " />
+            <marker date="1485115796347" expanded="true" signature="680:732" ph="UPDATE racun... " />
+            <marker date="1485115796347" expanded="true" signature="960:1009" ph="UPDATE racun... " />
+            <marker date="1485115796347" expanded="true" signature="960:1010" ph="UPDATE racun... " />
+            <marker date="1485115796347" expanded="true" signature="1262:1299" ph="SELECT * FRO... Prodajalci" />
+            <marker date="1485115796347" expanded="true" signature="1262:1300" ph="SELECT * FRO... Prodajalci" />
+            <marker date="1485115796347" expanded="true" signature="1579:1719" ph="INSERT INTO racuni... " />
+            <marker date="1485115796347" expanded="true" signature="1923:1981" ph="UPDATE Naroc... " />
+            <marker date="1485115796347" expanded="true" signature="1923:1982" ph="UPDATE Naroc... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index_session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1678">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <marker date="1485116087392" expanded="true" signature="222:263" ph="SELECT * FRO... stranke" />
+            <marker date="1485116087392" expanded="true" signature="690:711" ph="SELECT * FRO... artikli" />
+            <marker date="1485116087392" expanded="true" signature="850:902" ph="SELECT * FRO... administrator" />
+            <marker date="1485116087392" expanded="true" signature="850:903" ph="SELECT * FRO... administrator" />
+            <marker date="1485116087392" expanded="true" signature="1222:1268" ph="SELECT * FRO... prodajalci" />
+            <marker date="1485116087392" expanded="true" signature="1222:1269" ph="SELECT * FRO... prodajalci" />
+            <marker date="1485116087392" expanded="true" signature="1684:1705" ph="SELECT * FRO... artikli" />
+            <marker date="1485116087392" expanded="true" signature="1757:1779" ph="SELECT * FRO... narocila" />
+            <marker date="1485116087392" expanded="true" signature="1822:1843" ph="SELECT * FRO... stranke" />
+            <marker date="1485116087392" expanded="true" signature="1905:1950" ph="SELECT * FRO... ddv" />
+            <marker date="1485116087392" expanded="true" signature="2123:2147" ph="SELECT * FRO... prodajalci" />
+            <marker date="1485116087392" expanded="true" signature="2209:2254" ph="SELECT * FRO... ddv" />
+            <marker date="1485116087392" expanded="true" signature="2415:2482" ph="SELECT * FRO... narocila" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_script.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <marker date="1485116786398" expanded="true" signature="708:757" ph="SELECT * FRO... prodajalci" />
+            <marker date="1485116786398" expanded="true" signature="1137:1189" ph="SELECT * FRO... administrator" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dodajanje_izdelka_script.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1012">
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+          <folding>
+            <marker date="1485116936602" expanded="true" signature="267:370" ph="INSERT INTO artikli... " />
+          </folding>
         </state>
       </provider>
     </entry>

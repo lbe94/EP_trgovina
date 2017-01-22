@@ -1,6 +1,6 @@
 <?php
 include('artikel.php');
-include('index_session.php');
+include('navbar.php');
 ?>
 
 <html>
@@ -13,25 +13,7 @@ include('index_session.php');
     <script src="engine.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="admin.php">E - trgovina</a>
-        </div>
-        <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $name ?>
-                    <span class="glyphicon glyphicon-user"></span></a>
-                <ul class="dropdown-menu col-md-10">
-                    <a href="pregled_prodajalcev.php" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1" style="margin-top: 1%">Prodajalci</a>
-					<a href="pregled_strank.php" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1" style="margin-top: 1%">Stranke</a>
-                    <a href="profile.php" class="btn btn-default btn-lg col-lg-10 col-lg-offset-1" style="margin-top: 1%">Moj profil</a>
-                    <a href="logout.php" class="btn btn-danger btn-lg col-md-10 col-lg-offset-1" style="margin-top: 1%">Odjava</a>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</nav>
+<?php echo $navadmin; ?>
 <div class="container">
     <?php
     while($result = mysqli_fetch_array($select_articles, MYSQLI_ASSOC)){?>

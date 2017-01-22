@@ -1,6 +1,9 @@
 <?php
 include('admin_script.php');
 include('navbar.php');
+if(!isset($_SESSION['idAdministratorja'])){
+    header("Location: login-staff.php");
+}
 ?>
 
 <html>

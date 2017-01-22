@@ -1,6 +1,9 @@
 <?php
 include('index_session.php');
-include ('dodaj_stranko_script.php');
+
+if(isset($_SESSION['idStranke'])){
+    header("Location: login-staff.php");
+}
 ?>
 <html>
 <head>
