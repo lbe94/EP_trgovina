@@ -2,68 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29d89ea3-b264-43cd-88a7-defc98e70845" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/projekt.iml" afterPath="$PROJECT_DIR$/.idea/projekt.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin.php" afterPath="$PROJECT_DIR$/admin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_script.php" afterPath="$PROJECT_DIR$/admin_script.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artikel.php" afterPath="$PROJECT_DIR$/artikel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blagajna.php" afterPath="$PROJECT_DIR$/blagajna.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cart.php" afterPath="$PROJECT_DIR$/cart.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.php" afterPath="$PROJECT_DIR$/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deleteFromCart.php" afterPath="$PROJECT_DIR$/deleteFromCart.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo_artikli.php" afterPath="$PROJECT_DIR$/demo_artikli.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo_stranke.php" afterPath="$PROJECT_DIR$/demo_stranke.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dodaj_prodajalca_script.php" afterPath="$PROJECT_DIR$/dodaj_prodajalca_script.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dodaj_stranko_script.php" afterPath="$PROJECT_DIR$/dodaj_stranko_script.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dodajanje.php" afterPath="$PROJECT_DIR$/dodajanje.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dodajanje_izdelka.php" afterPath="$PROJECT_DIR$/dodajanje_izdelka.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dodajanje_izdelka_script.php" afterPath="$PROJECT_DIR$/dodajanje_izdelka_script.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dodajanje_narocila.php" afterPath="$PROJECT_DIR$/dodajanje_narocila.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dodajanje_prodajalcev.php" afterPath="$PROJECT_DIR$/dodajanje_prodajalcev.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dodajanje_stranke.php" afterPath="$PROJECT_DIR$/dodajanje_stranke.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guest.php" afterPath="$PROJECT_DIR$/guest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guest_script.php" afterPath="$PROJECT_DIR$/guest_script.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index_session.php" afterPath="$PROJECT_DIR$/index_session.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/izbrisi.php" afterPath="$PROJECT_DIR$/izbrisi.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/izbrisi_prodajalca.php" afterPath="$PROJECT_DIR$/izbrisi_prodajalca.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/izbrisi_stranko.php" afterPath="$PROJECT_DIR$/izbrisi_stranko.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/engine.js" afterPath="$PROJECT_DIR$/js/engine.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json.php" afterPath="$PROJECT_DIR$/json.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json_uporabniki.php" afterPath="$PROJECT_DIR$/json_uporabniki.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login-staff.php" afterPath="$PROJECT_DIR$/login-staff.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login_script.php" afterPath="$PROJECT_DIR$/login_script.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logout.php" afterPath="$PROJECT_DIR$/logout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mojiNakupi.php" afterPath="$PROJECT_DIR$/mojiNakupi.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/narocilo.php" afterPath="$PROJECT_DIR$/narocilo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/navbar.php" afterPath="$PROJECT_DIR$/navbar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/podrobnosti.php" afterPath="$PROJECT_DIR$/podrobnosti.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pregled_narocila.php" afterPath="$PROJECT_DIR$/pregled_narocila.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pregled_prodajalcev.php" afterPath="$PROJECT_DIR$/pregled_prodajalcev.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pregled_strank.php" afterPath="$PROJECT_DIR$/pregled_strank.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prodajalec.php" afterPath="$PROJECT_DIR$/prodajalec.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profilProdajalca.php" afterPath="$PROJECT_DIR$/profilProdajalca.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile.php" afterPath="$PROJECT_DIR$/profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register.php" afterPath="$PROJECT_DIR$/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register_script.php" afterPath="$PROJECT_DIR$/register_script.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spremeni.php" afterPath="$PROJECT_DIR$/spremeni.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urejanje_izdelka.php" afterPath="$PROJECT_DIR$/urejanje_izdelka.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urejanje_izdelka_script.php" afterPath="$PROJECT_DIR$/urejanje_izdelka_script.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urejanje_narocila.php" afterPath="$PROJECT_DIR$/urejanje_narocila.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urejanje_prodajalca.php" afterPath="$PROJECT_DIR$/urejanje_prodajalca.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urejanje_prodajalca_script.php" afterPath="$PROJECT_DIR$/urejanje_prodajalca_script.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urejanje_stranke.php" afterPath="$PROJECT_DIR$/urejanje_stranke.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urejanje_stranke_script.php" afterPath="$PROJECT_DIR$/urejanje_stranke_script.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zakljuciNakup.php" afterPath="$PROJECT_DIR$/zakljuciNakup.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zavarovano/certs&amp;keys/eptrgovina@localhost-cert.pem.crt" afterPath="$PROJECT_DIR$/zavarovano/certs&amp;keys/eptrgovina@localhost-cert.pem.crt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zavarovano/certs&amp;keys/eptrgovina@localhost-key.pem.crt" afterPath="$PROJECT_DIR$/zavarovano/certs&amp;keys/eptrgovina@localhost-key.pem.crt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zavarovano/default-ssl.conf" afterPath="$PROJECT_DIR$/zavarovano/default-ssl.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zavarovano/epca-cacert.pem" afterPath="$PROJECT_DIR$/zavarovano/epca-cacert.pem" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zavarovano/epca-crl.pem" afterPath="$PROJECT_DIR$/zavarovano/epca-crl.pem" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zavarovano/index.php" afterPath="$PROJECT_DIR$/zavarovano/index.php" />
     </list>
     <ignored path="projekt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,7 +29,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="322">
               <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-              <folding />
+              <folding>
+                <marker date="1485113762150" expanded="true" signature="80:119" ph="DELETE FROM " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,7 +52,7 @@
       <file leaf-file-name="index_session.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index_session.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1678">
+            <state relative-caret-position="2944">
               <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding>
                 <marker date="1485116087392" expanded="true" signature="222:263" ph="SELECT * FRO... stranke" />
@@ -131,24 +73,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin_script.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="admin_script.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin_script.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="874">
+              <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
               <folding>
-                <marker date="1485116786398" expanded="true" signature="708:757" ph="SELECT * FRO... prodajalci" />
-                <marker date="1485116786398" expanded="true" signature="1137:1189" ph="SELECT * FRO... administrator" />
+                <marker date="1485117409594" expanded="true" signature="794:843" ph="SELECT * FRO... prodajalci" />
+                <marker date="1485117409594" expanded="true" signature="1223:1275" ph="SELECT * FRO... administrator" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dodajanje_izdelka_script.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1196">
+              <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login_script.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login_script.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1288">
+              <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+              <folding>
+                <marker date="1485113762188" expanded="true" signature="708:754" ph="SELECT * FRO... stranke" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dodajanje_izdelka_script.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dodajanje_izdelka_script.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1012">
-              <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+            <state relative-caret-position="598">
+              <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
               <folding>
                 <marker date="1485116936602" expanded="true" signature="267:370" ph="INSERT INTO artikli... " />
               </folding>
@@ -159,7 +123,7 @@
       <file leaf-file-name="spremeni.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spremeni.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1494">
+            <state relative-caret-position="2530">
               <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
               <folding>
                 <marker date="1485115796347" expanded="true" signature="93:135" ph="SELECT * FRO... narocila" />
@@ -250,8 +214,8 @@
         <option value="$PROJECT_DIR$/zakljuciNakup.php" />
         <option value="$PROJECT_DIR$/spremeni.php" />
         <option value="$PROJECT_DIR$/index_session.php" />
-        <option value="$PROJECT_DIR$/admin_script.php" />
         <option value="$PROJECT_DIR$/dodajanje_izdelka_script.php" />
+        <option value="$PROJECT_DIR$/admin_script.php" />
       </list>
     </option>
   </component>
@@ -309,7 +273,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -331,6 +294,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -439,7 +403,8 @@
       <workItem from="1485075956413" duration="3911000" />
       <workItem from="1485080459142" duration="1168000" />
       <workItem from="1485103476752" duration="3493000" />
-      <workItem from="1485113792130" duration="3308000" />
+      <workItem from="1485113792130" duration="3698000" />
+      <workItem from="1485118096183" duration="627000" />
     </task>
     <task id="LOCAL-00001" summary=" Login / logout">
       <created>1481983204676</created>
@@ -588,15 +553,22 @@
       <option name="project" value="LOCAL" />
       <updated>1484991557514</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Final version push">
+      <created>1485118122977</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1485118122977</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157877000" />
+    <option name="totallyTimeSpent" value="158894000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-14" y="-14" width="3868" height="2098" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20286459" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -628,10 +600,10 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16075157" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20286459" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994652" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -674,7 +646,8 @@
     <MESSAGE value="HTML special chars, sql inject prevention, formatiranje košarice, http to https" />
     <MESSAGE value="Možnost spreminjanja gesla, malo popravljen layout" />
     <MESSAGE value="popravljen json api za stranke" />
-    <option name="LAST_COMMIT_MESSAGE" value="popravljen json api za stranke" />
+    <MESSAGE value="Final version push" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final version push" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -687,14 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login_script.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1196">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -830,15 +795,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1173">
           <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -847,7 +803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
           <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -855,7 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -879,7 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -887,7 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -903,7 +855,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -911,7 +862,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -919,7 +869,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -935,7 +884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -983,7 +931,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -999,7 +946,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1007,7 +953,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1019,28 +964,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/izbrisi_stranko.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zakljuciNakup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1485113762424" expanded="true" signature="369:464" ph="INSERT INTO narocila... " />
-            <marker date="1485113762424" expanded="true" signature="941:1016" ph="INSERT INTO narocila_det... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spremeni.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1494">
+        <state relative-caret-position="2530">
           <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
           <folding>
             <marker date="1485115796347" expanded="true" signature="93:135" ph="SELECT * FRO... narocila" />
@@ -1060,9 +986,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dodajanje_izdelka_script.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+          <folding>
+            <marker date="1485116936602" expanded="true" signature="267:370" ph="INSERT INTO artikli... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zakljuciNakup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1485113762424" expanded="true" signature="369:464" ph="INSERT INTO narocila... " />
+            <marker date="1485113762424" expanded="true" signature="941:1016" ph="INSERT INTO narocila_det... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/izbrisi_stranko.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <marker date="1485113762150" expanded="true" signature="80:119" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index_session.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1678">
+        <state relative-caret-position="2944">
           <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding>
             <marker date="1485116087392" expanded="true" signature="222:263" ph="SELECT * FRO... stranke" />
@@ -1082,23 +1047,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin_script.php">
+    <entry file="file://$PROJECT_DIR$/login_script.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="1288">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
           <folding>
-            <marker date="1485116786398" expanded="true" signature="708:757" ph="SELECT * FRO... prodajalci" />
-            <marker date="1485116786398" expanded="true" signature="1137:1189" ph="SELECT * FRO... administrator" />
+            <marker date="1485113762188" expanded="true" signature="708:754" ph="SELECT * FRO... stranke" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dodajanje_izdelka_script.php">
+    <entry file="file://$PROJECT_DIR$/admin_script.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        <state relative-caret-position="874">
+          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
           <folding>
-            <marker date="1485116936602" expanded="true" signature="267:370" ph="INSERT INTO artikli... " />
+            <marker date="1485117409594" expanded="true" signature="794:843" ph="SELECT * FRO... prodajalci" />
+            <marker date="1485117409594" expanded="true" signature="1223:1275" ph="SELECT * FRO... administrator" />
           </folding>
         </state>
       </provider>

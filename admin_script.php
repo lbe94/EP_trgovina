@@ -13,7 +13,6 @@ if(isset($_POST['login'])){
     session_start();
 
     // varnostni parametri, da preprecimo sql
-    //TODO: html special chars
     $username = strip_tags(($_POST['username']));
     $password = strip_tags(($_POST['password']));
     $username = stripslashes(($_POST['username']));
@@ -21,6 +20,9 @@ if(isset($_POST['login'])){
     $username = mysqli_real_escape_string($db, ($_POST['username']));
     $password = mysqli_real_escape_string($db, ($_POST['password']));
 
+    //brisanje html znakov
+    $username = htmlspecialchars($username);
+    $password = htmlspecialchars($password);
 
 	$sql = "SELECT * FROM prodajalci WHERE Eposta = ? LIMIT 1";
     $query = mysqli_prepare($db, $sql);
