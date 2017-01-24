@@ -1,7 +1,7 @@
 <?php
 include('admin_script.php');
 include('navbar.php');
-if(!isset($_SESSION['idAdministratorja'])){
+if(isset($_SESSION['idProdajalca']) or isset($_SESSION['idProdajalca'])){
     header("Location: login-staff.php");
 }
 ?>
