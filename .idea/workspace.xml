@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29d89ea3-b264-43cd-88a7-defc98e70845" name="Default" comment="">
+<<<<<<< Updated upstream
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_script.php" afterPath="$PROJECT_DIR$/admin_script.php" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/projekt.iml" afterPath="$PROJECT_DIR$/.idea/projekt.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin.php" afterPath="$PROJECT_DIR$/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/izbrisi_stranko.php" afterPath="$PROJECT_DIR$/izbrisi_stranko.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profilProdajalca.php" afterPath="$PROJECT_DIR$/profilProdajalca.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register_script.php" afterPath="$PROJECT_DIR$/register_script.php" />
+>>>>>>> Stashed changes
     </list>
     <ignored path="projekt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,55 +33,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="izbrisi_stranko.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/izbrisi_stranko.php">
+      <file leaf-file-name="profilProdajalca.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/profilProdajalca.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="322">
               <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
               <folding>
                 <marker date="1485113762150" expanded="true" signature="80:119" ph="DELETE FROM " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zakljuciNakup.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zakljuciNakup.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+            <state relative-caret-position="480">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
-                <marker date="1485113762424" expanded="true" signature="369:464" ph="INSERT INTO narocila... " />
-                <marker date="1485113762424" expanded="true" signature="941:1016" ph="INSERT INTO narocila_det... " />
+                <marker date="1485184982000" expanded="true" signature="918:1053" ph="UPDATE Proda... " />
+                <marker date="1485184982000" expanded="true" signature="1302:1443" ph="UPDATE Admin... " />
+>>>>>>> Stashed changes
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index_session.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index_session.php">
+      <file leaf-file-name="login_script.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login_script.php">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="44" />
+              <folding>
+                <marker date="1485085722000" expanded="true" signature="708:754" ph="SELECT * FRO... stranke" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register_script.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/register_script.php">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="2944">
               <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+=======
+            <state relative-caret-position="615">
+              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+>>>>>>> Stashed changes
               <folding>
-                <marker date="1485116087392" expanded="true" signature="222:263" ph="SELECT * FRO... stranke" />
-                <marker date="1485116087392" expanded="true" signature="690:711" ph="SELECT * FRO... artikli" />
-                <marker date="1485116087392" expanded="true" signature="850:902" ph="SELECT * FRO... administrator" />
-                <marker date="1485116087392" expanded="true" signature="850:903" ph="SELECT * FRO... administrator" />
-                <marker date="1485116087392" expanded="true" signature="1222:1268" ph="SELECT * FRO... prodajalci" />
-                <marker date="1485116087392" expanded="true" signature="1222:1269" ph="SELECT * FRO... prodajalci" />
-                <marker date="1485116087392" expanded="true" signature="1684:1705" ph="SELECT * FRO... artikli" />
-                <marker date="1485116087392" expanded="true" signature="1757:1779" ph="SELECT * FRO... narocila" />
-                <marker date="1485116087392" expanded="true" signature="1822:1843" ph="SELECT * FRO... stranke" />
-                <marker date="1485116087392" expanded="true" signature="1905:1950" ph="SELECT * FRO... ddv" />
-                <marker date="1485116087392" expanded="true" signature="2123:2147" ph="SELECT * FRO... prodajalci" />
-                <marker date="1485116087392" expanded="true" signature="2209:2254" ph="SELECT * FRO... ddv" />
-                <marker date="1485116087392" expanded="true" signature="2415:2482" ph="SELECT * FRO... narocila" />
+                <marker date="1485186821000" expanded="true" signature="1395:1448" ph="SELECT idStr... stranke" />
+                <marker date="1485186821000" expanded="true" signature="1550:1696" ph="INSERT INTO stranke... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file leaf-file-name="admin_script.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin_script.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -103,43 +114,73 @@
               <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
               <folding>
                 <marker date="1485113762188" expanded="true" signature="708:754" ph="SELECT * FRO... stranke" />
+=======
+      <file leaf-file-name="urejanje_stranke.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/urejanje_stranke.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="45" column="28" lean-forward="false" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+              <folding>
+                <marker date="1485085722000" expanded="true" signature="112:157" ph="SELECT * FRO... stranke" />
+>>>>>>> Stashed changes
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file leaf-file-name="dodajanje_izdelka_script.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dodajanje_izdelka_script.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="598">
               <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+=======
+      <file leaf-file-name="izbrisi_stranko.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/izbrisi_stranko.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+>>>>>>> Stashed changes
               <folding>
-                <marker date="1485116936602" expanded="true" signature="267:370" ph="INSERT INTO artikli... " />
+                <marker date="1485187190000" expanded="true" signature="80:119" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spremeni.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spremeni.php">
+      <file leaf-file-name="urejanje_stranke_script.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/urejanje_stranke_script.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="2530">
               <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+=======
+            <state relative-caret-position="45">
+              <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+>>>>>>> Stashed changes
               <folding>
-                <marker date="1485115796347" expanded="true" signature="93:135" ph="SELECT * FRO... narocila" />
-                <marker date="1485115796347" expanded="true" signature="93:136" ph="SELECT * FRO... narocila" />
-                <marker date="1485115796347" expanded="true" signature="377:414" ph="SELECT * FRO... Prodajalci" />
-                <marker date="1485115796347" expanded="true" signature="377:415" ph="SELECT * FRO... Prodajalci" />
-                <marker date="1485115796347" expanded="true" signature="680:731" ph="UPDATE racun... " />
-                <marker date="1485115796347" expanded="true" signature="680:732" ph="UPDATE racun... " />
-                <marker date="1485115796347" expanded="true" signature="960:1009" ph="UPDATE racun... " />
-                <marker date="1485115796347" expanded="true" signature="960:1010" ph="UPDATE racun... " />
-                <marker date="1485115796347" expanded="true" signature="1262:1299" ph="SELECT * FRO... Prodajalci" />
-                <marker date="1485115796347" expanded="true" signature="1262:1300" ph="SELECT * FRO... Prodajalci" />
-                <marker date="1485115796347" expanded="true" signature="1579:1719" ph="INSERT INTO racuni... " />
-                <marker date="1485115796347" expanded="true" signature="1923:1981" ph="UPDATE Naroc... " />
-                <marker date="1485115796347" expanded="true" signature="1923:1982" ph="UPDATE Naroc... " />
+                <marker date="1485085722000" expanded="true" signature="263:358" ph="UPDATE Stran... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prodajalec.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/prodajalec.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -185,14 +226,11 @@
         <option value="$PROJECT_DIR$/json_uporabniki.php" />
         <option value="$PROJECT_DIR$/demo_artikli.php" />
         <option value="$PROJECT_DIR$/demo_stranke.php" />
-        <option value="$PROJECT_DIR$/admin.php" />
         <option value="$PROJECT_DIR$/navbar.php" />
         <option value="$PROJECT_DIR$/mojiNakupi.php" />
         <option value="$PROJECT_DIR$/izbrisi.php" />
         <option value="$PROJECT_DIR$/urejanje_prodajalca_script.php" />
-        <option value="$PROJECT_DIR$/register_script.php" />
         <option value="$PROJECT_DIR$/prodajalec.php" />
-        <option value="$PROJECT_DIR$/profilProdajalca.php" />
         <option value="$PROJECT_DIR$/pregled_prodajalcev.php" />
         <option value="$PROJECT_DIR$/podrobnosti.php" />
         <option value="$PROJECT_DIR$/izbrisi_prodajalca.php" />
@@ -210,12 +248,18 @@
         <option value="$PROJECT_DIR$/pregled_strank.php" />
         <option value="$PROJECT_DIR$/urejanje_izdelka.php" />
         <option value="$PROJECT_DIR$/urejanje_stranke.php" />
-        <option value="$PROJECT_DIR$/izbrisi_stranko.php" />
         <option value="$PROJECT_DIR$/zakljuciNakup.php" />
         <option value="$PROJECT_DIR$/spremeni.php" />
         <option value="$PROJECT_DIR$/index_session.php" />
         <option value="$PROJECT_DIR$/dodajanje_izdelka_script.php" />
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/admin_script.php" />
+=======
+        <option value="$PROJECT_DIR$/admin.php" />
+        <option value="$PROJECT_DIR$/profilProdajalca.php" />
+        <option value="$PROJECT_DIR$/register_script.php" />
+        <option value="$PROJECT_DIR$/izbrisi_stranko.php" />
+>>>>>>> Stashed changes
       </list>
     </option>
   </component>
@@ -227,10 +271,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-14" />
-    <option name="y" value="-14" />
-    <option name="width" value="3868" />
-    <option name="height" value="2098" />
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="973" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -248,16 +291,6 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
-  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -273,36 +306,43 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< Updated upstream
+=======
+      <pane id="Scratches" />
+      <pane id="Scope" />
+>>>>>>> Stashed changes
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="e-trgovina" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e-trgovina" />
+              <option name="myItemId" value="EP_trgovina" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="e-trgovina" />
+              <option name="myItemId" value="EP_trgovina" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+<<<<<<< Updated upstream
       <pane id="Scope" />
       <pane id="Scratches" />
+=======
+>>>>>>> Stashed changes
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -338,7 +378,7 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
+      <command value="run" />
       <scripts />
       <node-interpreter value="project" />
       <envs />
@@ -403,8 +443,15 @@
       <workItem from="1485075956413" duration="3911000" />
       <workItem from="1485080459142" duration="1168000" />
       <workItem from="1485103476752" duration="3493000" />
+<<<<<<< Updated upstream
       <workItem from="1485113792130" duration="3698000" />
       <workItem from="1485118096183" duration="627000" />
+=======
+      <workItem from="1485113792130" duration="3308000" />
+      <workItem from="1485183396221" duration="766000" />
+      <workItem from="1485184606624" duration="2495000" />
+      <workItem from="1488494599954" duration="198000" />
+>>>>>>> Stashed changes
     </task>
     <task id="LOCAL-00001" summary=" Login / logout">
       <created>1481983204676</created>
@@ -564,30 +611,39 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="158894000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-14" y="-14" width="3868" height="2098" extended-state="6" />
     <editor active="false" />
+=======
+    <option name="totallyTimeSpent" value="161336000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="973" extended-state="6" />
+    <editor active="true" />
+>>>>>>> Stashed changes
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20286459" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297619" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20238096" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994652" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -656,6 +712,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/js/engine.js" />
     <entry file="file://$PROJECT_DIR$/deleteFromCart.php" />
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -664,10 +721,12 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/cart.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="482">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="false" />
           </folding>
@@ -677,7 +736,7 @@
     <entry file="file://$PROJECT_DIR$/artikel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="920">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -685,7 +744,7 @@
     <entry file="file://$PROJECT_DIR$/blagajna.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5198">
-          <caret line="113" column="6" selection-start-line="113" selection-start-column="6" selection-end-line="113" selection-end-column="6" />
+          <caret line="113" column="6" lean-forward="false" selection-start-line="113" selection-start-column="6" selection-end-line="113" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -693,7 +752,7 @@
     <entry file="file://$PROJECT_DIR$/logout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -702,7 +761,7 @@
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="823">
-          <caret line="93" column="22" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
+          <caret line="93" column="22" lean-forward="false" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -710,7 +769,7 @@
     <entry file="file://$PROJECT_DIR$/json.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="13" />
+          <caret line="16" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -718,7 +777,7 @@
     <entry file="file://$PROJECT_DIR$/demo_artikli.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="823">
-          <caret line="66" column="14" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
+          <caret line="66" column="14" lean-forward="false" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
           <folding>
             <element signature="e#6#88#0#PHP" expanded="false" />
           </folding>
@@ -728,7 +787,7 @@
     <entry file="file://$PROJECT_DIR$/demo_stranke.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+          <caret line="16" column="3" lean-forward="false" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
           <folding>
             <element signature="e#6#88#0#PHP" expanded="false" />
           </folding>
@@ -738,15 +797,7 @@
     <entry file="file://$PROJECT_DIR$/json_uporabniki.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -754,7 +805,7 @@
     <entry file="file://$PROJECT_DIR$/index_session_prodajalec.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -762,7 +813,7 @@
     <entry file="file://$PROJECT_DIR$/navbar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -770,7 +821,7 @@
     <entry file="file://$PROJECT_DIR$/mojiNakupi.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1037">
-          <caret line="61" column="76" selection-start-line="56" selection-start-column="16" selection-end-line="61" selection-end-column="76" />
+          <caret line="61" column="76" lean-forward="false" selection-start-line="56" selection-start-column="16" selection-end-line="61" selection-end-column="76" />
           <folding />
         </state>
       </provider>
@@ -778,7 +829,7 @@
     <entry file="file://$PROJECT_DIR$/izbrisi.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -786,7 +837,7 @@
     <entry file="file://$PROJECT_DIR$/login-staff.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -794,11 +845,25 @@
     <entry file="file://$PROJECT_DIR$/profile.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1173">
+<<<<<<< Updated upstream
           <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+=======
+          <caret line="69" column="5" lean-forward="false" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/mysqli.php" />
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/register_script.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
@@ -810,12 +875,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+=======
+    <entry file="file://$PROJECT_DIR$/urejanje_prodajalca_script.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/narocilo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="704">
+<<<<<<< Updated upstream
           <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding />
         </state>
@@ -833,20 +905,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+=======
+          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/podrobnosti.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
+<<<<<<< Updated upstream
           <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+=======
+          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/izbrisi_prodajalca.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -854,27 +935,40 @@
     <entry file="file://$PROJECT_DIR$/urejanje_izdelka_script.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
+<<<<<<< Updated upstream
           <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+=======
+          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/urejanje_narocila.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
+<<<<<<< Updated upstream
           <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+=======
+          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/urejanje_prodajalca.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
+<<<<<<< Updated upstream
           <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+=======
+          <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dodajanje_izdelka.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
+<<<<<<< Updated upstream
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
@@ -884,13 +978,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+=======
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dodajanje_narocila.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -898,7 +996,7 @@
     <entry file="file://$PROJECT_DIR$/dodajanje_prodajalcev.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -906,7 +1004,7 @@
     <entry file="file://$PROJECT_DIR$/dodajanje_stranke.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -914,7 +1012,7 @@
     <entry file="file://$PROJECT_DIR$/dodaj_stranko_script.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -922,7 +1020,7 @@
     <entry file="file://$PROJECT_DIR$/dodaj_prodajalca_script.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -930,62 +1028,145 @@
     <entry file="file://$PROJECT_DIR$/pregled_narocila.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
+<<<<<<< Updated upstream
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prodajalec.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="3" column="1" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="1" />
+=======
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/urejanje_izdelka.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/urejanje_stranke.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pregled_strank.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zakljuciNakup.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
+        <state relative-caret-position="68">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+=======
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spremeni.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index_session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+>>>>>>> Stashed changes
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_script.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
+        <state relative-caret-position="493">
+          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+=======
+        <state relative-caret-position="270">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+>>>>>>> Stashed changes
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dodajanje_izdelka_script.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="22" column="29" lean-forward="false" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< Updated upstream
+    <entry file="file://$PROJECT_DIR$/spremeni.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2530">
           <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+=======
+    <entry file="file://$PROJECT_DIR$/urejanje_izdelka.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
           <folding>
-            <marker date="1485115796347" expanded="true" signature="93:135" ph="SELECT * FRO... narocila" />
-            <marker date="1485115796347" expanded="true" signature="93:136" ph="SELECT * FRO... narocila" />
-            <marker date="1485115796347" expanded="true" signature="377:414" ph="SELECT * FRO... Prodajalci" />
-            <marker date="1485115796347" expanded="true" signature="377:415" ph="SELECT * FRO... Prodajalci" />
-            <marker date="1485115796347" expanded="true" signature="680:731" ph="UPDATE racun... " />
-            <marker date="1485115796347" expanded="true" signature="680:732" ph="UPDATE racun... " />
-            <marker date="1485115796347" expanded="true" signature="960:1009" ph="UPDATE racun... " />
-            <marker date="1485115796347" expanded="true" signature="960:1010" ph="UPDATE racun... " />
-            <marker date="1485115796347" expanded="true" signature="1262:1299" ph="SELECT * FRO... Prodajalci" />
-            <marker date="1485115796347" expanded="true" signature="1262:1300" ph="SELECT * FRO... Prodajalci" />
-            <marker date="1485115796347" expanded="true" signature="1579:1719" ph="INSERT INTO racuni... " />
-            <marker date="1485115796347" expanded="true" signature="1923:1981" ph="UPDATE Naroc... " />
-            <marker date="1485115796347" expanded="true" signature="1923:1982" ph="UPDATE Naroc... " />
+            <marker date="1485183735000" expanded="true" signature="471:1366" ph="..." />
+            <marker date="1485183735000" expanded="true" signature="1411:1625" ph="..." />
+            <marker date="1485183735000" expanded="false" signature="1455:1473" ph="..." />
+            <marker date="1485183735000" expanded="true" signature="1474:1614" ph="..." />
+            <marker date="1485183735000" expanded="true" signature="1519:1599" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pregled_prodajalcev.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="31" column="61" lean-forward="false" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profilProdajalca.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <marker date="1485184982000" expanded="true" signature="918:1053" ph="UPDATE Proda... " />
+            <marker date="1485184982000" expanded="true" signature="1302:1443" ph="UPDATE Admin... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prodajalec.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login_script.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="44" />
+>>>>>>> Stashed changes
+          <folding>
+            <marker date="1485085722000" expanded="true" signature="708:754" ph="SELECT * FRO... stranke" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/dodajanje_izdelka_script.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
@@ -1029,34 +1210,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2944">
           <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/register_script.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+>>>>>>> Stashed changes
           <folding>
-            <marker date="1485116087392" expanded="true" signature="222:263" ph="SELECT * FRO... stranke" />
-            <marker date="1485116087392" expanded="true" signature="690:711" ph="SELECT * FRO... artikli" />
-            <marker date="1485116087392" expanded="true" signature="850:902" ph="SELECT * FRO... administrator" />
-            <marker date="1485116087392" expanded="true" signature="850:903" ph="SELECT * FRO... administrator" />
-            <marker date="1485116087392" expanded="true" signature="1222:1268" ph="SELECT * FRO... prodajalci" />
-            <marker date="1485116087392" expanded="true" signature="1222:1269" ph="SELECT * FRO... prodajalci" />
-            <marker date="1485116087392" expanded="true" signature="1684:1705" ph="SELECT * FRO... artikli" />
-            <marker date="1485116087392" expanded="true" signature="1757:1779" ph="SELECT * FRO... narocila" />
-            <marker date="1485116087392" expanded="true" signature="1822:1843" ph="SELECT * FRO... stranke" />
-            <marker date="1485116087392" expanded="true" signature="1905:1950" ph="SELECT * FRO... ddv" />
-            <marker date="1485116087392" expanded="true" signature="2123:2147" ph="SELECT * FRO... prodajalci" />
-            <marker date="1485116087392" expanded="true" signature="2209:2254" ph="SELECT * FRO... ddv" />
-            <marker date="1485116087392" expanded="true" signature="2415:2482" ph="SELECT * FRO... narocila" />
+            <marker date="1485186821000" expanded="true" signature="1395:1448" ph="SELECT idStr... stranke" />
+            <marker date="1485186821000" expanded="true" signature="1550:1696" ph="INSERT INTO stranke... " />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/login_script.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1288">
           <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
           <folding>
             <marker date="1485113762188" expanded="true" signature="708:754" ph="SELECT * FRO... stranke" />
+=======
+    <entry file="file://$PROJECT_DIR$/urejanje_stranke_script.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding>
+            <marker date="1485085722000" expanded="true" signature="263:358" ph="UPDATE Stran... " />
+>>>>>>> Stashed changes
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/admin_script.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="874">
@@ -1064,6 +1250,24 @@
           <folding>
             <marker date="1485117409594" expanded="true" signature="794:843" ph="SELECT * FRO... prodajalci" />
             <marker date="1485117409594" expanded="true" signature="1223:1275" ph="SELECT * FRO... administrator" />
+=======
+    <entry file="file://$PROJECT_DIR$/urejanje_stranke.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="28" lean-forward="false" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+          <folding>
+            <marker date="1485085722000" expanded="true" signature="112:157" ph="SELECT * FRO... stranke" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/izbrisi_stranko.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <marker date="1485187190000" expanded="true" signature="80:119" ph="DELETE FROM " />
+>>>>>>> Stashed changes
           </folding>
         </state>
       </provider>

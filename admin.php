@@ -20,14 +20,17 @@ include('navbar.php');
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h2 class="h2" ><?php echo $result['Naziv']?></h2>
-                <a href="urejanje_izdelka.php?id=<?php echo $result['idArtikla']?>" class="btn btn-success btn-lg" style="float: right; margin-top: -50px;">Uredi</a>
+                <form method="post" action="urejanje_izdelka.php">
+                    <input type="hidden" value="<?php echo $result['idArtikla']?>" name="id">
+                    <button type="submit" class="btn btn-success btn-lg" style="float: right; margin-top: -50px;">Uredi</button>
+                </form>
             </div>
             <div class="panel-body">
                 <p1 class="h5"><?php echo $result['Opis']?></p1>
             </div>
-            <div class="panel-footer">
-                <p1 class="h3 text-danger pull-right" style="padding-left: 50px;"><?php echo $result['Cena']." "?><span class="glyphicon-euro"></span></p1>
-                <br><br>
+            <div class="panel-footer" style="height: 35px;">
+                <p1 class="h3 text-danger pull-right" style= "margin-top: -5px; padding-left: 50px;"><?php echo $result['Cena']." "?><span class="glyphicon-euro"></span></p1>
+
             </div>
         </div>
         <?php

@@ -6,23 +6,38 @@ if(isset($_SESSION['idStranke'])){
     header("Location: login-staff.php");
 }
 
-if(isset($_POST['changeCustomerAttributes'])) {
+
+if (isset($_POST['changeCustomerAttributes'])) {
 
     $newName = strip_tags(($_POST['name']));
     $newSurname = strip_tags(($_POST['surname']));
     $newUsername = strip_tags(($_POST['username']));
     $newName = stripslashes(($_POST['name']));
-    $newSurname= stripslashes(($_POST['surname']));
+    $newSurname = stripslashes(($_POST['surname']));
     $newUsername = stripslashes(($_POST['username']));
     $newName = mysqli_real_escape_string($db, ($_POST['name']));
     $newSurname = mysqli_real_escape_string($db, ($_POST['surname']));
     $newUsername = mysqli_real_escape_string($db, ($_POST['username']));
+    $pass = strip_tags(($_POST['password']));
+    $pass = stripcslashes(($_POST['password']));
+    $pass = mysqli_real_escape_string($db, ($_POST['password']));
 
-    $sql = "UPDATE Prodajalci SET Ime = '$newName', Priimek = '$newSurname', Eposta='$newUsername' WHERE idProdajalca= '$user_check'";
-    if ($db->query($sql) === TRUE) {
-        header("Location: profilProdajalca.php");
-    } else {
-        echo "Error updating record: " . $db->error;
+    if(isset($_SESSION['idProdajalca'])) {
+        $sql = "UPDATE Prodajalci SET Ime = '$newName', Priimek = '$newSurname', Eposta='$newUsername', Geslo='$pass' WHERE idProdajalca= '$user_check'";
+        if ($db->query($sql) === TRUE) {
+            header("Location: prodajalec.php");
+        } else {
+            echo "Error updating record: " . $db->error;
+        }
+    }
+
+    else if(isset($_SESSION['idAdministrator'])){
+        $sql = "UPDATE Administrator SET Ime = '$newName', Priimek = '$newSurname', Eposta='$newUsername', Geslo='$pass' WHERE idAdministrator= '$user_check'";
+        if ($db->query($sql) === TRUE) {
+            header("Location: prodajalec.php");
+        } else {
+            echo "Error updating record: " . $db->error;
+        }
     }
 }
 ?>

@@ -1,7 +1,7 @@
 <?php
 include('config.php');
 $id = $_POST['id'];
-$result = mysqli_prepare($db, "DELETE FROM Stranke WHERE idStranke = ?");
+$result = mysqli_prepare($db, "DELETE FROM stranke WHERE idStranke = ?");
 
 //bind parameters to prevent sql code injection
 mysqli_stmt_bind_param($result, 'i', $id);
